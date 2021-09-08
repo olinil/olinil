@@ -148,31 +148,43 @@ body{
 .bilde1{
     grid-area: bilde1;
     padding-top: 20px;
+    max-height: 300px;
+    max-width: 300px;
 }
 
 .bilde2{
     grid-area: bilde2;
     padding-top: 20px;
+    max-height: 300px;
+    max-width: 300px;
 }
 
 .bilde3{
     grid-area: bilde3;
     padding-top: 20px;
+    max-height: 300px;
+    max-width: 300px;
 }
 
 .bilde4{
     grid-area: bilde4;
     padding-top: 20px;
+    max-height: 300px;
+    max-width: 300px;
 }
 
 .bilde5{
     grid-area: bilde5;
     padding-top: 20px;
+    max-height: 300px;
+    max-width: 300px;
 }
 
 .bilde6{
     grid-area: bilde6;
     padding-top: 20px;
+    max-height: 300px;
+    max-width: 300px;
 }
 
 .footer{
