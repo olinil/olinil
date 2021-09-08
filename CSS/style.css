@@ -1,0 +1,276 @@
+/*Hoved farger:
+Lysegrønn - #1fa78f
+Hvit - #ffffff
+Mørekegrønn - #005545
+*/
+body{
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.grid{
+    display: grid;
+    grid-gap: 6px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px auto 1fr 50px;
+    grid-template-areas: 
+    "header header header header header header"
+    "menu menu menu menu menu menu"
+    "main main main main main main"
+    "footer footer footer footer footer footer";
+}
+
+.grid-medier{
+    display: grid;
+    grid-gap: 6px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px auto auto 1fr 50px;
+    grid-template-areas: 
+    "header header header header header header"
+    "menu menu menu menu menu menu"
+    "snap snap snap snap snap snap"
+    "main main main main main main"
+    "footer footer footer footer footer footer";
+}
+
+.grid-bilder{
+    display: grid;
+    grid-gap: 6px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px auto 1fr 1fr 50px;
+    grid-template-areas: 
+    "header header header header header header"
+    "menu menu menu menu menu menu"
+    "bilde1 bilde1 bilde2 bilde2 bilde3 bilde3"
+    "bilde4 bilde4 bilde5 bilde5 bilde6 bilde6"
+    "footer footer footer footer footer footer";
+}
+
+.header{
+    grid-area: header;
+}
+
+.header-img{
+    padding-left: 10%;
+    text-align: center;
+}
+
+.header-nav{
+    grid-area: menu;
+    color: #ffffff;
+    margin-top: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.links a{
+    transition: .3s;
+    text-decoration-line: underline;
+    color: #1fa78f;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    font-size: 1em;
+}
+
+.links a:hover{
+    color: #005545;
+    font-size: 1.5em;
+    padding-right: 50px;
+    font-weight: 700;
+}
+
+.main{
+    grid-area: main;
+}
+
+.h1{
+    color: #1fa78f;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    line-height: 2em;
+    text-align: center;
+    font-weight: 600;
+}
+
+.h2{
+    color: #005545;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    padding-top: 10px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.h3{
+    color: #005545;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    padding-top: 10px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.bilde{
+    text-align: center;
+}
+
+.p1{
+    color: #005545;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7em;
+    padding-top: 30px;
+    padding-bottom: 39px;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+.p2{
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    margin-top: 50px;
+}
+
+.snap{
+    grid-area: snap;
+    text-align: center;
+}
+
+.snapcode img{
+    height: 200px;
+    width: 200px;
+    padding: 50px;
+}
+
+.bilde1{
+    grid-area: bilde1;
+    padding-top: 20px;
+}
+
+.bilde2{
+    grid-area: bilde2;
+    padding-top: 20px;
+}
+
+.bilde3{
+    grid-area: bilde3;
+    padding-top: 20px;
+}
+
+.bilde4{
+    grid-area: bilde4;
+    padding-top: 20px;
+}
+
+.bilde5{
+    grid-area: bilde5;
+    padding-top: 20px;
+}
+
+.bilde6{
+    grid-area: bilde6;
+    padding-top: 20px;
+}
+
+.footer{
+    grid-area: footer;
+    text-align: center;
+}
+
+/*------------------------------------------------------------*/
+
+@media only screen and (min-width: 975px) {
+    body {
+        background-image: url(../Bilder/bakgrunn.png);
+        background-position: center;
+    }
+
+    .grid{
+        display: grid;
+        grid-gap: 6px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 100px 1fr 50px;
+        grid-template-areas: 
+        "header header header menu menu menu"
+        "main main main main main main"
+        "footer footer footer footer footer footer";
+    }
+
+    .grid-medier{
+        display: grid;
+        grid-gap: 6px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 100px 1fr 100px;
+        grid-template-areas: 
+        "header header header menu menu menu"
+        "main main main snap snap snap"
+        "footer footer footer footer footer footer";
+    }
+
+    .grid-bilder{
+        display: grid;
+        grid-gap: 6px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 100px 1fr 100px;
+        grid-template-areas: 
+        "header header header menu menu menu"
+        "bilde1 bilde1 bilde2 bilde2 bilde3 bilde3"
+        "bilde4 bilde4 bilde5 bilde5 bilde6 bilde6"
+        "footer footer footer footer footer footer";
+    }
+
+    .header-img {
+        text-align: left;
+    }
+
+    .links a {
+        color: #ffffff;
+        padding: 20px;
+    }
+
+    .main{
+        margin-top: 100px;
+        margin-left: 100px;
+        grid-area: main;
+    }
+
+    .snap{
+        grid-area: snap;
+        margin-left: 100px;
+    }
+
+    .snapcode img{
+        float: right;
+        height: 200px;
+        width: 200px;
+        padding: 50px;
+    }
+
+    .h1{
+        color: #1fa78f;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.5em;
+        text-align: left;
+        font-weight: 600;
+    }
+    
+    .h2{
+        color: #005545;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 3em;
+        padding-top: 20px;
+        text-align: left;
+        font-weight: 600;
+    }
+
+    .p1{
+        color: #005545;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1em;
+        padding-top: 30px;
+        padding-bottom: 39px;
+        line-height: 1.5em;
+        text-align: left;
+    }
+}
