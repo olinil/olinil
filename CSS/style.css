@@ -113,6 +113,8 @@ body{
 
 .bilde{
     text-align: center;
+    max-height: 300px;
+    max-width: 300px;
 }
 
 .p1{
