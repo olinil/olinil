@@ -4,17 +4,17 @@ Hvit - #ffffff
 Mørekegrønn - #005545
 */
 body{
-    background-color: #ffffff;
-    margin: 0;
-    padding: 0;
+    background-color: #ffffff; /*Endre bakgrunnsfarge*/
+    margin: 0; /*Fjerner alle "marger" som dytter alt i en rettning på siden*/
+    padding: 0; /*Fjerner padding på hele nettsiden*/
 }
 
 .grid{
-    display: grid;
-    grid-gap: 6px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 100px auto 1fr 50px;
-    grid-template-areas: 
+    display: grid; /*Sette opp grids*/
+    grid-gap: 6px; /*Mellomrom mellom grids*/
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /*Sette opp kolonner i grids*/
+    grid-template-rows: 100px auto 1fr 50px; /*Sette opp rader i grids*/
+    grid-template-areas: /*Sette opp grids og hvor grid area skal være på nettsiden*/
     "header header header header header header"
     "menu menu menu menu menu menu"
     "main main main main main main"
@@ -22,11 +22,11 @@ body{
 }
 
 .grid-om_meg{
-    display: grid;
-    grid-gap: 6px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 100px auto 1fr 1fr 50px;
-    grid-template-areas: 
+    display: grid; /*Sette opp grids*/
+    grid-gap: 6px; /*Mellomrom mellom grids*/
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /*Sette opp kolonner i grids*/
+    grid-template-rows: 100px auto 1fr 1fr 50px; /*Sette opp rader i grids*/
+    grid-template-areas: /*Sette opp grids og hvor grid area skal være på nettsiden*/
     "header header header header header header"
     "menu menu menu menu menu menu"
     "main main main main main main"
@@ -35,11 +35,11 @@ body{
 }
 
 .grid-medier{
-    display: grid;
-    grid-gap: 6px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 100px auto auto 1fr 50px;
-    grid-template-areas: 
+    display: grid; /*Sette opp grids*/
+    grid-gap: 6px; /*Mellomrom mellom grids*/
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /*Sette opp kolonner i grids*/
+    grid-template-rows: 100px auto auto 1fr 50px; /*Sette opp rader i grids*/
+    grid-template-areas: /*Sette opp grids og hvor grid area skal være på nettsiden*/
     "header header header header header header"
     "menu menu menu menu menu menu"
     "snap snap snap snap snap snap"
@@ -48,11 +48,11 @@ body{
 }
 
 .grid-bilder{
-    display: grid;
-    grid-gap: 6px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 100px auto 1fr 1fr 50px;
-    grid-template-areas: 
+    display: grid; /*Sette opp grids*/
+    grid-gap: 6px; /*Mellomrom mellom grids*/
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /*Sette opp kolonner i grids*/
+    grid-template-rows: 100px auto 1fr 1fr 50px; /*Sette opp rader i grids*/
+    grid-template-areas: /*Sette opp grids og hvor grid area skal være på nettsiden*/
     "header header header header header header"
     "menu menu menu menu menu menu"
     "bilde1 bilde1 bilde2 bilde2 bilde3 bilde3"
@@ -61,169 +61,171 @@ body{
 }
 
 .header{
-    grid-area: header;
+    grid-area: header; /*Tildeler et grid-area som sier plasseringen i grids*/
 }
 
 .header-img{
-    padding-left: 10%;
-    text-align: center;
+    padding-left: 10%; /*Flytte fra venstre med 10%*/
+    text-align: center; /*Flytte alt til senter*/
 }
 
 .header-nav{
-    grid-area: menu;
-    color: #ffffff;
-    margin-top: 20px;
-    text-align: center;
-    padding-bottom: 20px;
+    grid-area: menu; /*Tildeler et grid-area som sier plasseringen i grids*/
+    color: #ffffff; /*Bestemmer fargen*/
+    margin-top: 20px; /*Sette en marg på 20px fra toppen*/
+    text-align: center; /*Flytte alt til senter*/
+    padding-bottom: 20px; /*Flytte fra bunnen med 20px*/
 }
 
 .links a{
-    transition: .3s;
-    text-decoration-line: underline;
-    color: #1fa78f;
-    font-family: 'Montserrat', sans-serif;
-    padding: 10px;
-    font-size: 1em;
+    transition: .3s; /*Setter tiden til 3 sekunder på a:hover*/
+    text-decoration-line: underline; /*Setter en linje under teksten som en tekstdekorasjon*/
+    color: #1fa78f; /*Bestemmer fargen*/
+    font-family: 'Montserrat', sans-serif; /*Bestemmer hvilken tekst type som skal brukes*/
+    padding: 10px; /*Lager mellomrom fra alle sider med 10px*/
+    font-size: 1em; /*Setter skrift størrelse*/
 }
 
 .links a:hover{
-    color: #005545;
-    font-size: 1.5em;
-    padding-right: 50px;
-    font-weight: 700;
+    color: #005545; /*Bestemmer fargen*/
+    font-size: 1.5em; /*Setter skrift størrelse*/
+    padding-right: 50px; /*Flytte fra høyre med 50px*/
+    font-weight: 700; /*Bestemmer tykkelsen til teksten*/
 }
 
 .main{
-    grid-area: main;
+    grid-area: main; /*Tildeler et grid-area som sier plasseringen i grids*/
 }
 
 .h1{
-    color: #1fa78f;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1em;
-    line-height: 2em;
-    text-align: center;
-    font-weight: 600;
+    color: #1fa78f; /*Bestemmer fargen*/
+    font-family: 'Montserrat', sans-serif; /*Bestemmer hvilken tekst type som skal brukes*/
+    font-size: 1em; /*Setter skrift størrelse*/
+    line-height: 2em; /*Setter linjeavstand*/
+    text-align: center; /*Flytte alt til senter*/
+    font-weight: 600; /*Bestemmer tykkelsen til teksten*/
 }
 
 .h2{
-    color: #005545;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2em;
-    padding-top: 10px;
-    text-align: center;
-    font-weight: 600;
+    color: #005545; /*Bestemmer fargen*/
+    font-family: 'Montserrat', sans-serif; /*Bestemmer hvilken tekst type som skal brukes*/
+    font-size: 2em; /*Setter skrift størrelse*/
+    padding-top: 10px; /*Flytte fra toppen med 10px*/
+    text-align: center; /*Flytte alt til senter*/
+    font-weight: 600; /*Bestemmer tykkelsen til teksten*/
 }
 
 .h3{
-    color: #005545;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1em;
-    padding-top: 10px;
-    text-align: center;
-    font-weight: 600;
+    color: #005545; /*Bestemmer fargen*/
+    font-family: 'Montserrat', sans-serif; /*Bestemmer hvilken tekst type som skal brukes*/
+    font-size: 1em; /*Setter skrift størrelse*/
+    padding-top: 10px; /*Flytte fra toppen med 10px*/
+    text-align: center; /*Flytte alt til senter*/
+    font-weight: 600; /*Bestemmer tykkelsen til teksten*/
 }
 
 .bilde{
-    text-align: center;
-    max-height: 300px;
-    max-width: 300px;
+    text-align: center; /*Flytte alt til senter*/
+    max-height: 300px; /*Bestemmer max høyde*/
+    max-width: 300px; /*Bestemmer max bredde*/
 }
 
 .p1{
-    color: #005545;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.7em;
-    padding-top: 30px;
-    padding-bottom: 39px;
-    line-height: 1.5em;
-    text-align: center;
+    color: #005545; /*Bestemmer fargen*/
+    font-family: 'Montserrat', sans-serif; /*Bestemmer hvilken tekst type som skal brukes*/
+    font-size: 0.7em; /*Setter skrift størrelse*/
+    padding-top: 30px; /*Flytte fra toppen med 30px*/
+    padding-bottom: 39px; /*Flytte fra bunnen med 39px*/
+    line-height: 1.5em; /*Setter linjeavstand*/
+    text-align: center; /*Flytte alt til senter*/
 }
 
 .p2{
-    color: black;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5em;
-    margin-top: 50px;
+    color: black; /*Bestemmer fargen*/
+    font-family: 'Montserrat', sans-serif; /*Bestemmer hvilken tekst type som skal brukes*/
+    font-size: 1.5em; /*Setter skrift størrelse*/
+    margin-top: 50px; /*Sette en marg på 50px fra toppen*/
 }
 
 .p3{
-    color: #005545;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1em;
-    padding-top: 0px;
-    padding-bottom: 10px;
-    font-weight: 600;
-    text-align: center;
+    color: #005545; /*Bestemmer fargen*/
+    font-family: 'Montserrat', sans-serif; /*Bestemmer hvilken tekst type som skal brukes*/
+    font-size: 1em; /*Setter skrift størrelse*/
+    padding-top: 0px; /*Fjerner padding fra toppen*/
+    padding-bottom: 10px; /*Flytte fra bunnen med 10px*/
+    font-weight: 600; /*Bestemmer tykkelsen til teksten*/
+    text-align: center; /*Flytte alt til senter*/
 }
 
 .songs{
-    grid-area: songs;
-    max-width: 75%;
-    border-radius: 10%;
-    text-align: center;
+    grid-area: songs; /*Tildeler et grid-area som sier plasseringen i grids*/
+    max-width: 75%; /*Bestemmer max bredde*/
+    border-radius: 10%; /*Bestemmer hvor rund hjørnene skal være*/
+    text-align: center; /*Flytte alt til senter*/
 }
 
 .snap{
-    grid-area: snap;
-    text-align: center;
+    grid-area: snap; /*Tildeler et grid-area som sier plasseringen i grids*/
+    text-align: center; /*Flytte alt til senter*/
 }
 
 .snapcode img{
-    height: 200px;
-    width: 200px;
-    padding: 50px;
-}
-
-.img{
-    text-align: center;
+    height: 200px; /*Bestemmer høyde*/
+    width: 200px; /*Bestemmer bredde*/
+    padding: 50px; /*Lager mellomrom fra alle sider med 50px*/
 }
 
 .bilde1{
-    grid-area: bilde1;
-    padding-top: 20px;
-    height: 300px;
-    width: 300px;
+    grid-area: bilde1; /*Tildeler et grid-area som sier plasseringen i grids*/
+    padding-top: 20px; /*Flytte fra toppen med 20px*/
+    height: 300px; /*Bestemmer høyde*/
+    width: 300px; /*Bestemmer bredde*/
+    text-align: center; /*Flytte alt til senter*/
 }
 
 .bilde2{
-    grid-area: bilde2;
-    padding-top: 20px;
-    height: 300px;
-    width: 300px;
+    grid-area: bilde2; /*Tildeler et grid-area som sier plasseringen i grids*/
+    padding-top: 20px; /*Flytte fra toppen med 20px*/
+    height: 300px; /*Bestemmer høyde*/
+    width: 300px; /*Bestemmer bredde*/
+    text-align: center; /*Flytte alt til senter*/
 }
 
 .bilde3{
-    grid-area: bilde3;
-    padding-top: 20px;
-    height: 300px;
-    width: 300px;
+    grid-area: bilde3; /*Tildeler et grid-area som sier plasseringen i grids*/
+    padding-top: 20px; /*Flytte fra toppen med 20px*/
+    height: 300px; /*Bestemmer høyde*/
+    width: 300px; /*Bestemmer bredde*/
+    text-align: center; /*Flytte alt til senter*/
 }
 
 .bilde4{
-    grid-area: bilde4;
-    padding-top: 20px;
-    height: 300px;
-    width: 300px;
+    grid-area: bilde4; /*Tildeler et grid-area som sier plasseringen i grids*/
+    padding-top: 20px; /*Flytte fra toppen med 20px*/
+    height: 300px; /*Bestemmer høyde*/
+    width: 300px; /*Bestemmer bredde*/
+    text-align: center; /*Flytte alt til senter*/
 }
 
 .bilde5{
-    grid-area: bilde5;
-    padding-top: 20px;
-    height: 300px;
-    width: 300px;
+    grid-area: bilde5; /*Tildeler et grid-area som sier plasseringen i grids*/
+    padding-top: 20px; /*Flytte fra toppen med 20px*/
+    height: 300px; /*Bestemmer høyde*/
+    width: 300px; /*Bestemmer bredde*/
+    text-align: center; /*Flytte alt til senter*/
 }
 
 .bilde6{
-    grid-area: bilde6;
-    padding-top: 20px;
-    height: 300px;
-    width: 300px;
+    grid-area: bilde6; /*Tildeler et grid-area som sier plasseringen i grids*/
+    padding-top: 20px; /*Flytte fra toppen med 20px*/
+    height: 300px; /*Bestemmer høyde*/
+    width: 300px; /*Bestemmer bredde*/
+    text-align: center; /*Flytte alt til senter*/
 }
 
 .footer{
-    grid-area: footer;
-    text-align: center;
+    grid-area: footer; /*Tildeler et grid-area som sier plasseringen i grids*/
+    text-align: center; /*Flytte alt til senter*/
 }
 
 /*------------------------------------------------------------*/
@@ -235,44 +237,44 @@ body{
     }
 
     .grid{
-        display: grid;
-        grid-gap: 6px;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 100px 1fr 50px;
-        grid-template-areas: 
+        display: grid; /*Sette opp grids*/
+        grid-gap: 6px; /*Mellomrom mellom grids*/
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /*Sette opp kolonner i grids*/
+        grid-template-rows: 100px 1fr 50px; /*Sette opp rader i grids*/
+        grid-template-areas: /*Sette opp grids og hvor grid area skal være på nettsiden*/
         "header header header menu menu menu"
         "main main main main main main"
         "footer footer footer footer footer footer";
     }
 
     .grid-om_meg{
-        display: grid;
-        grid-gap: 6px;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 100px 1fr 50px;
-        grid-template-areas: 
+        display: grid; /*Sette opp grids*/
+        grid-gap: 6px; /*Mellomrom mellom grids*/
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /*Sette opp kolonner i grids*/
+        grid-template-rows: 100px 1fr 50px; /*Sette opp rader i grids*/
+        grid-template-areas: /*Sette opp grids og hvor grid area skal være på nettsiden*/
         "header header header menu menu menu"
         "main main main main songs songs"
         "footer footer footer footer footer footer";
     }
 
     .grid-medier{
-        display: grid;
-        grid-gap: 6px;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 100px 1fr 100px;
-        grid-template-areas: 
+        display: grid; /*Sette opp grids*/
+        grid-gap: 6px; /*Mellomrom mellom grids*/
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /*Sette opp kolonner i grids*/
+        grid-template-rows: 100px 1fr 100px; /*Sette opp rader i grids*/
+        grid-template-areas: /*Sette opp grids og hvor grid area skal være på nettsiden*/
         "header header header menu menu menu"
         "main main main snap snap snap"
         "footer footer footer footer footer footer";
     }
 
     .grid-bilder{
-        display: grid;
-        grid-gap: 6px;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 100px 1fr 100px;
-        grid-template-areas: 
+        display: grid; /*Sette opp grids*/
+        grid-gap: 6px; /*Mellomrom mellom grids*/
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /*Sette opp kolonner i grids*/
+        grid-template-rows: 100px 1fr 100px; /*Sette opp rader i grids*/
+        grid-template-areas: /*Sette opp grids og hvor grid area skal være på nettsiden*/
         "header header header menu menu menu"
         "bilde1 bilde1 bilde2 bilde2 bilde3 bilde3"
         "bilde4 bilde4 bilde5 bilde5 bilde6 bilde6"
@@ -280,65 +282,65 @@ body{
     }
 
     .header-img {
-        text-align: left;
+        text-align: left; /*Flytte alt mot venstre*/
     }
 
     .links a {
-        color: #ffffff;
-        padding: 20px;
+        color: #ffffff; /*Bestemmer fargen*/
+        padding: 20px; /*Lager mellomrom fra alle sider med 20px*/
     }
 
     .main{
-        margin-top: 100px;
-        margin-left: 100px;
-        grid-area: main;
+        margin-top: 100px; /*Sette en marg på 20px fra toppen*/
+        margin-left: 100px; /*Sette en marg på 100px fra venstre*/
+        grid-area: main; /*Tildeler et grid-area som sier plasseringen i grids*/
     }
 
     .songs{
-        text-align: left;
+        text-align: left; /*Flytte alt mot venstre*/
     }
 
     .snap{
-        grid-area: snap;
-        margin-left: 100px;
+        grid-area: snap; /*Tildeler et grid-area som sier plasseringen i grids*/
+        margin-left: 100px; /*Sette en marg på 100px fra venstre*/
     }
 
     .snapcode img{
-        float: right;
-        height: 200px;
-        width: 200px;
-        padding: 50px;
+        float: right; /*Flytte alt mot høyre*/
+        height: 200px; /*Bestemmer høyde*/
+        width: 200px; /*Bestemmer bredde*/
+        padding: 50px; /*Lager mellomrom fra alle sider med 50px*/
     }
 
     .h1{
-        color: #1fa78f;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 1.5em;
-        text-align: left;
-        font-weight: 600;
+        color: #1fa78f; /*Bestemmer fargen*/
+        font-family: 'Montserrat', sans-serif; /*Bestemmer hvilken tekst type som skal brukes*/
+        font-size: 1.5em; /*Setter skrift størrelse*/
+        text-align: left; /*Flytte alt mot venstre*/
+        font-weight: 600; /*Bestemmer tykkelsen til teksten*/
     }
     
     .h2{
-        color: #005545;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 3em;
-        padding-top: 20px;
-        text-align: left;
-        font-weight: 600;
+        color: #005545; /*Bestemmer fargen*/
+        font-family: 'Montserrat', sans-serif; /*Bestemmer hvilken tekst type som skal brukes*/
+        font-size: 3em; /*Setter skrift størrelse*/
+        padding-top: 20px; /*Flytte fra toppen med 20px*/
+        text-align: left; /*Flytte alt mot venstre*/
+        font-weight: 600; /*Bestemmer tykkelsen til teksten*/
     }
 
     .p1{
-        color: #005545;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 1em;
-        padding-top: 30px;
-        padding-bottom: 39px;
-        line-height: 1.5em;
-        text-align: left;
+        color: #005545; /*Bestemmer fargen*/
+        font-family: 'Montserrat', sans-serif; /*Bestemmer hvilken tekst type som skal brukes*/
+        font-size: 1em; /*Setter skrift størrelse*/
+        padding-top: 30px; /*Flytte fra toppen med 30px*/
+        padding-bottom: 39px; /*Flytte fra bunnen med 39px*/
+        line-height: 1.5em; /*Setter linjeavstand*/
+        text-align: left; /*Flytte alt mot venstre*/
     }
 
     .p3{
-        text-align: left;
-        padding-top: 150px; 
+        text-align: left; /*Flytte alt mot venstre*/
+        padding-top: 150px; /*Flytte fra toppen med 150px*/
     }
 }
