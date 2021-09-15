@@ -175,6 +175,10 @@ body{
     padding: 50px;
 }
 
+.img{
+    text-align: center;
+}
+
 .bilde1{
     grid-area: bilde1;
     padding-top: 20px;
