@@ -181,6 +181,7 @@ body{
     height: 300px; /*Bestemmer høyde*/
     width: 300px; /*Bestemmer bredde*/
     text-align: center; /*Flytte alt til senter*/
+    max-height: 150px; /*Bestemmer max høyde*/
 }
 
 .bilde2{
@@ -189,6 +190,7 @@ body{
     height: 300px; /*Bestemmer høyde*/
     width: 300px; /*Bestemmer bredde*/
     text-align: center; /*Flytte alt til senter*/
+    max-height: 150px; /*Bestemmer max høyde*/
 }
 
 .bilde3{
@@ -197,6 +199,7 @@ body{
     height: 300px; /*Bestemmer høyde*/
     width: 300px; /*Bestemmer bredde*/
     text-align: center; /*Flytte alt til senter*/
+    max-height: 150px; /*Bestemmer max høyde*/
 }
 
 .bilde4{
@@ -205,6 +208,7 @@ body{
     height: 300px; /*Bestemmer høyde*/
     width: 300px; /*Bestemmer bredde*/
     text-align: center; /*Flytte alt til senter*/
+    max-height: 150px; /*Bestemmer max høyde*/
 }
 
 .bilde5{
@@ -213,6 +217,7 @@ body{
     height: 300px; /*Bestemmer høyde*/
     width: 300px; /*Bestemmer bredde*/
     text-align: center; /*Flytte alt til senter*/
+    max-height: 150px; /*Bestemmer max høyde*/
 }
 
 .bilde6{
@@ -221,6 +226,7 @@ body{
     height: 300px; /*Bestemmer høyde*/
     width: 300px; /*Bestemmer bredde*/
     text-align: center; /*Flytte alt til senter*/
+    max-height: 150px; /*Bestemmer max høyde*/
 }
 
 .footer{
