@@ -9,7 +9,7 @@ body{
     padding: 0; /*Fjerner padding på hele nettsiden*/
 }
 
-.grid{
+.grid-index{
     display: grid; /*Sette opp grids*/
     grid-gap: 6px; /*Mellomrom mellom grids*/
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /*Sette opp kolonner i grids*/
@@ -17,7 +17,7 @@ body{
     grid-template-areas: /*Sette opp grids og hvor grid area skal være på nettsiden*/
     "header header header header header header"
     "menu menu menu menu menu menu"
-    "main main main main main main"
+    "main main main meg meg meg"
     "footer footer footer footer footer footer";
 }
 
@@ -43,6 +43,18 @@ body{
     "header header header header header header"
     "menu menu menu menu menu menu"
     "snap snap snap snap snap snap"
+    "main main main main main main"
+    "footer footer footer footer footer footer";
+}
+
+.grid-skoler{
+    display: grid; /*Sette opp grids*/
+    grid-gap: 6px; /*Mellomrom mellom grids*/
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /*Sette opp kolonner i grids*/
+    grid-template-rows: 100px auto 1fr 50px; /*Sette opp rader i grids*/
+    grid-template-areas: /*Sette opp grids og hvor grid area skal være på nettsiden*/
+    "header header header header header header"
+    "menu menu menu menu menu menu"
     "main main main main main main"
     "footer footer footer footer footer footer";
 }
@@ -95,6 +107,10 @@ body{
 
 .main{
     grid-area: main; /*Tildeler et grid-area som sier plasseringen i grids*/
+}
+
+.meg{
+    grid-area: meg; /*Tildeler et grid-area som sier plasseringen i grids*/
 }
 
 .h1{
