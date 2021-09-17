@@ -3,74 +3,16 @@ Lysegrønn - #1fa78f
 Hvit - #ffffff
 Mørekegrønn - #005545
 */
+
+
+
+/*-----Felles for alle html dokumentene-----------------------------------------------------*/
+
 body{
     background-color: #ffffff; /*Endre bakgrunnsfarge*/
     margin: 0; /*Fjerner alle "marger" som dytter alt i en rettning på siden*/
     padding: 0; /*Fjerner padding på hele nettsiden*/
-}
-
-.grid-index{
-    display: grid; /*Sette opp grids*/
-    grid-gap: 6px; /*Mellomrom mellom grids*/
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /*Sette opp kolonner i grids*/
-    grid-template-rows: 100px auto 1fr 1fr 50px; /*Sette opp rader i grids*/
-    grid-template-areas: /*Sette opp grids og hvor grid area skal være på nettsiden*/
-    "header header header header header header"
-    "menu menu menu menu menu menu"
-    "main main main main main main"
-    "meg meg meg meg meg meg"
-    "footer footer footer footer footer footer";
-}
-
-.grid-om_meg{
-    display: grid; /*Sette opp grids*/
-    grid-gap: 6px; /*Mellomrom mellom grids*/
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /*Sette opp kolonner i grids*/
-    grid-template-rows: 100px auto 1fr 1fr 50px; /*Sette opp rader i grids*/
-    grid-template-areas: /*Sette opp grids og hvor grid area skal være på nettsiden*/
-    "header header header header header header"
-    "menu menu menu menu menu menu"
-    "main main main main main main"
-    ". songs songs songs songs ."
-    "footer footer footer footer footer footer";
-}
-
-.grid-medier{
-    display: grid; /*Sette opp grids*/
-    grid-gap: 6px; /*Mellomrom mellom grids*/
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /*Sette opp kolonner i grids*/
-    grid-template-rows: 100px auto auto 1fr 50px; /*Sette opp rader i grids*/
-    grid-template-areas: /*Sette opp grids og hvor grid area skal være på nettsiden*/
-    "header header header header header header"
-    "menu menu menu menu menu menu"
-    "snap snap snap snap snap snap"
-    "main main main main main main"
-    "footer footer footer footer footer footer";
-}
-
-.grid-skoler{
-    display: grid; /*Sette opp grids*/
-    grid-gap: 6px; /*Mellomrom mellom grids*/
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /*Sette opp kolonner i grids*/
-    grid-template-rows: 100px auto 1fr 50px; /*Sette opp rader i grids*/
-    grid-template-areas: /*Sette opp grids og hvor grid area skal være på nettsiden*/
-    "header header header header header header"
-    "menu menu menu menu menu menu"
-    "main main main main main main"
-    "footer footer footer footer footer footer";
-}
-
-.grid-bilder{
-    display: grid; /*Sette opp grids*/
-    grid-gap: 6px; /*Mellomrom mellom grids*/
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /*Sette opp kolonner i grids*/
-    grid-template-rows: 100px auto 1fr 1fr 50px; /*Sette opp rader i grids*/
-    grid-template-areas: /*Sette opp grids og hvor grid area skal være på nettsiden*/
-    "header header header header header header"
-    "menu menu menu menu menu menu"
-    "bilde1 bilde1 bilde2 bilde2 bilde3 bilde3"
-    "bilde4 bilde4 bilde5 bilde5 bilde6 bilde6"
-    "footer footer footer footer footer footer";
+    overflow: hidden;
 }
 
 .header{
@@ -110,15 +52,6 @@ body{
     grid-area: main; /*Tildeler et grid-area som sier plasseringen i grids*/
 }
 
-.meg{
-    grid-area: meg; /*Tildeler et grid-area som sier plasseringen i grids*/
-}
-
-.meg img{
-    float: right; /*Flytte alt mot høyre*/
-    margin-top: 10%;
-}
-
 .h1{
     color: #1fa78f; /*Bestemmer fargen*/
     font-family: 'Montserrat', sans-serif; /*Bestemmer hvilken tekst type som skal brukes*/
@@ -144,12 +77,6 @@ body{
     padding-top: 10px; /*Flytte fra toppen med 10px*/
     text-align: center; /*Flytte alt til senter*/
     font-weight: 600; /*Bestemmer tykkelsen til teksten*/
-}
-
-.bilde{
-    text-align: center; /*Flytte alt til senter*/
-    max-height: 300px; /*Bestemmer max høyde*/
-    max-width: 300px; /*Bestemmer max bredde*/
 }
 
 .p1{
@@ -179,11 +106,82 @@ body{
     text-align: center; /*Flytte alt til senter*/
 }
 
+.footer{
+    grid-area: footer; /*Tildeler et grid-area som sier plasseringen i grids*/
+    text-align: center; /*Flytte alt til senter*/
+}
+
+
+/*--------------------------------------------------------------------------------------*/
+
+
+/*-----INDEX----------------------------------------------------------------------------*/
+
+.grid-index{
+    display: grid; /*Sette opp grids*/
+    grid-gap: 6px; /*Mellomrom mellom grids*/
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /*Sette opp kolonner i grids*/
+    grid-template-rows: 100px auto 1fr 50px; /*Sette opp rader i grids*/
+    grid-template-areas: /*Sette opp grids og hvor grid area skal være på nettsiden*/
+    "header header header header header header"
+    "menu menu menu menu menu menu"
+    "main main main main main main"
+    /*"meg meg meg meg meg meg"*/
+    "footer footer footer footer footer footer";
+}
+
+.meg{
+    grid-area: meg; /*Tildeler et grid-area som sier plasseringen i grids*/
+}
+
+.meg img{
+    display: none;
+    height: 300px;
+    position: absolute;
+    right: 0;
+    top: 25%;
+}
+
+/*--------------------------------------------------------------------------------------*/
+
+/*-----Om meg--------------------------------------------------------------------------*/
+
+.grid-om_meg{
+    display: grid; /*Sette opp grids*/
+    grid-gap: 6px; /*Mellomrom mellom grids*/
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /*Sette opp kolonner i grids*/
+    grid-template-rows: 100px auto 1fr 1fr 50px; /*Sette opp rader i grids*/
+    grid-template-areas: /*Sette opp grids og hvor grid area skal være på nettsiden*/
+    "header header header header header header"
+    "menu menu menu menu menu menu"
+    "main main main main main main"
+    ". songs songs songs songs ."
+    "footer footer footer footer footer footer";
+}
+
 .songs{
     grid-area: songs; /*Tildeler et grid-area som sier plasseringen i grids*/
     max-width: 75%; /*Bestemmer max bredde*/
     border-radius: 10%; /*Bestemmer hvor rund hjørnene skal være*/
     text-align: center; /*Flytte alt til senter*/
+}
+
+/*--------------------------------------------------------------------------------------*/
+
+
+/*-----Medier----------------------------------------------------------------------------*/
+
+.grid-medier{
+    display: grid; /*Sette opp grids*/
+    grid-gap: 6px; /*Mellomrom mellom grids*/
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /*Sette opp kolonner i grids*/
+    grid-template-rows: 100px auto auto 1fr 50px; /*Sette opp rader i grids*/
+    grid-template-areas: /*Sette opp grids og hvor grid area skal være på nettsiden*/
+    "header header header header header header"
+    "menu menu menu menu menu menu"
+    "snap snap snap snap snap snap"
+    "main main main main main main"
+    "footer footer footer footer footer footer";
 }
 
 .snap{
@@ -195,6 +193,45 @@ body{
     height: 200px; /*Bestemmer høyde*/
     width: 200px; /*Bestemmer bredde*/
     padding: 50px; /*Lager mellomrom fra alle sider med 50px*/
+}
+
+/*--------------------------------------------------------------------------------------*/
+
+/*-----Skoler----------------------------------------------------------------------------*/
+
+.grid-skoler{
+    display: grid; /*Sette opp grids*/
+    grid-gap: 6px; /*Mellomrom mellom grids*/
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /*Sette opp kolonner i grids*/
+    grid-template-rows: 100px auto 1fr 50px; /*Sette opp rader i grids*/
+    grid-template-areas: /*Sette opp grids og hvor grid area skal være på nettsiden*/
+    "header header header header header header"
+    "menu menu menu menu menu menu"
+    "main main main main main main"
+    "footer footer footer footer footer footer";
+}
+
+/*--------------------------------------------------------------------------------------*/
+
+/*-----Bilder----------------------------------------------------------------------------*/
+
+.grid-bilder{
+    display: grid; /*Sette opp grids*/
+    grid-gap: 6px; /*Mellomrom mellom grids*/
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /*Sette opp kolonner i grids*/
+    grid-template-rows: 100px auto 1fr 1fr 50px; /*Sette opp rader i grids*/
+    grid-template-areas: /*Sette opp grids og hvor grid area skal være på nettsiden*/
+    "header header header header header header"
+    "menu menu menu menu menu menu"
+    "bilde1 bilde1 bilde2 bilde2 bilde3 bilde3"
+    "bilde4 bilde4 bilde5 bilde5 bilde6 bilde6"
+    "footer footer footer footer footer footer";
+}
+
+.bilde{
+    text-align: center; /*Flytte alt til senter*/
+    max-height: 300px; /*Bestemmer max høyde*/
+    max-width: 300px; /*Bestemmer max bredde*/
 }
 
 .bilde1{
@@ -239,11 +276,6 @@ body{
     width: 300px; /*Bestemmer bredde*/
 }
 
-.footer{
-    grid-area: footer; /*Tildeler et grid-area som sier plasseringen i grids*/
-    text-align: center; /*Flytte alt til senter*/
-}
-
 /*------------------------------------------------------------*/
 
 @media only screen and (min-width: 975px) {
@@ -259,7 +291,7 @@ body{
         grid-template-rows: 100px 1fr 50px; /*Sette opp rader i grids*/
         grid-template-areas: /*Sette opp grids og hvor grid area skal være på nettsiden*/
         "header header header menu menu menu"
-        "main main main meg meg meg"
+        "main main main main main main"
         "footer footer footer footer footer footer";
     }
 
@@ -321,6 +353,10 @@ body{
         margin-top: 100px; /*Sette en marg på 20px fra toppen*/
         margin-left: 100px; /*Sette en marg på 100px fra venstre*/
         grid-area: main; /*Tildeler et grid-area som sier plasseringen i grids*/
+    }
+
+    .meg img{
+        display: inline;
     }
 
     .songs{
