@@ -12,7 +12,6 @@ body{
     background-color: #ffffff; /*Endre bakgrunnsfarge*/
     margin: 0; /*Fjerner alle "marger" som dytter alt i en rettning på siden*/
     padding: 0; /*Fjerner padding på hele nettsiden*/
-    overflow: hidden;
 }
 
 .header{
@@ -136,7 +135,7 @@ body{
 
 .meg img{
     display: none;
-    height: 300px;
+    height: 500px;
     position: absolute;
     right: 0;
     top: 25%;
