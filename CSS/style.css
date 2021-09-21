@@ -412,5 +412,6 @@ body{
 @media only screen and (min-height: 1080px) (min-width: 1920px) {
     body {
         background-color: #ffffff;
+        background-image:disabled
     }
 }
