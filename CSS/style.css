@@ -406,3 +406,11 @@ body{
         padding-top: 150px; /*Flytte fra toppen med 150px*/
     }
 }
+
+
+
+@media only screen and (min-width: 1920px) {
+    body {
+        background-color: #ffffff;
+    }
+}
