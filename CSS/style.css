@@ -38,6 +38,7 @@ body{
     font-family: 'Montserrat', sans-serif; /*Bestemmer hvilken tekst type som skal brukes*/
     padding: 10px; /*Lager mellomrom fra alle sider med 10px*/
     font-size: 1em; /*Setter skrift størrelse*/
+    text-align: center;
 }
 
 .links a:hover{
@@ -135,7 +136,7 @@ body{
 
 .meg img{
     display: none;
-    height: 500px;
+    height: 400px;
     position: absolute;
     right: 0;
     top: 25%;
@@ -217,14 +218,14 @@ body{
 .grid-bilder{
     display: grid; /*Sette opp grids*/
     grid-gap: 6px; /*Mellomrom mellom grids*/
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /*Sette opp kolonner i grids*/
+    grid-template-columns: 100px 1fr 1fr 1fr 100px; /*Sette opp kolonner i grids*/
     grid-template-rows: 100px auto 1fr 1fr 50px; /*Sette opp rader i grids*/
     grid-template-areas: /*Sette opp grids og hvor grid area skal være på nettsiden*/
-    "header header header header header header"
-    "menu menu menu menu menu menu"
-    "bilde1 bilde1 bilde2 bilde2 bilde3 bilde3"
-    "bilde4 bilde4 bilde5 bilde5 bilde6 bilde6"
-    "footer footer footer footer footer footer";
+    "header header header header header"
+    "menu menu menu menu menu"
+    ". bilde1 bilde2 bilde3 ."
+    ". bilde4 bilde5 bilde6 ."
+    "footer footer footer footer footer";
 }
 
 .bilde{
@@ -277,17 +278,19 @@ body{
 
 /*------------------------------------------------------------*/
 
-@media only screen and (min-width: 975px) {
+@media only screen and (min-width: 1245px) {
     body {
-        background-image: url(../Bilder/bakgrunn.png);
+        /*background-image: url(../Bilder/bakgrunn.png);*/
         background-position: center;
+        background: linear-gradient(55deg, #ffffff 50%, #1fa78f 50%);
     }
 
     .grid-index{
         display: grid; /*Sette opp grids*/
         grid-gap: 6px; /*Mellomrom mellom grids*/
+        min-height: 100vh;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /*Sette opp kolonner i grids*/
-        grid-template-rows: 100px 1fr 50px; /*Sette opp rader i grids*/
+        grid-template-rows: 100px 1fr 100px; /*Sette opp rader i grids*/
         grid-template-areas: /*Sette opp grids og hvor grid area skal være på nettsiden*/
         "header header header menu menu menu"
         "main main main main main main"
@@ -297,8 +300,9 @@ body{
     .grid-om_meg{
         display: grid; /*Sette opp grids*/
         grid-gap: 6px; /*Mellomrom mellom grids*/
+        min-height: 100vh;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /*Sette opp kolonner i grids*/
-        grid-template-rows: 100px 1fr 50px; /*Sette opp rader i grids*/
+        grid-template-rows: 100px 1fr 100px; /*Sette opp rader i grids*/
         grid-template-areas: /*Sette opp grids og hvor grid area skal være på nettsiden*/
         "header header header menu menu menu"
         "main main main main songs songs"
@@ -308,6 +312,7 @@ body{
     .grid-medier{
         display: grid; /*Sette opp grids*/
         grid-gap: 6px; /*Mellomrom mellom grids*/
+        min-height: 100vh;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /*Sette opp kolonner i grids*/
         grid-template-rows: 100px 1fr 100px; /*Sette opp rader i grids*/
         grid-template-areas: /*Sette opp grids og hvor grid area skal være på nettsiden*/
@@ -319,6 +324,7 @@ body{
     .grid-skoler{
         display: grid; /*Sette opp grids*/
         grid-gap: 6px; /*Mellomrom mellom grids*/
+        min-height: 100vh;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /*Sette opp kolonner i grids*/
         grid-template-rows: 100px 1fr 50px; /*Sette opp rader i grids*/
         grid-template-areas: /*Sette opp grids og hvor grid area skal være på nettsiden*/
@@ -330,13 +336,14 @@ body{
     .grid-bilder{
         display: grid; /*Sette opp grids*/
         grid-gap: 6px; /*Mellomrom mellom grids*/
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /*Sette opp kolonner i grids*/
+        min-height: 100vh;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /*Sette opp kolonner i grids*/
         grid-template-rows: 100px 1fr 100px; /*Sette opp rader i grids*/
         grid-template-areas: /*Sette opp grids og hvor grid area skal være på nettsiden*/
-        "header header header menu menu menu"
-        "bilde1 bilde1 bilde2 bilde2 bilde3 bilde3"
-        "bilde4 bilde4 bilde5 bilde5 bilde6 bilde6"
-        "footer footer footer footer footer footer";
+        "header header  menu menu menu"
+        ". bilde1 bilde2  bilde3 ."
+        ". bilde4  bilde5 bilde6 ."
+        "footer footer footer footer footer";
     }
 
     .header-img {
@@ -359,7 +366,7 @@ body{
     }
 
     .songs{
-        text-align: left; /*Flytte alt mot venstre*/
+        text-align: center; /*Flytte alt mot venstre*/
     }
 
     .snap{
@@ -405,14 +412,4 @@ body{
         text-align: left; /*Flytte alt mot venstre*/
         padding-top: 150px; /*Flytte fra toppen med 150px*/
     }
-}
-
-
-
-@media only screen and (min-width: 1920px) {
-
-    body {
-        background-image: url(../Bilder/bakgrunn-stor.png);
-    }
-
 }
