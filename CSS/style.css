@@ -338,7 +338,7 @@ body{
         grid-gap: 6px; /*Mellomrom mellom grids*/
         min-height: 100vh;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /*Sette opp kolonner i grids*/
-        grid-template-rows: 100px 1fr 100px; /*Sette opp rader i grids*/
+        grid-template-rows: 100px 1fr 1fr 100px; /*Sette opp rader i grids*/
         grid-template-areas: /*Sette opp grids og hvor grid area skal være på nettsiden*/
         "header header  menu menu menu"
         ". bilde1 bilde2  bilde3 ."
