@@ -148,6 +148,10 @@ body{
     top: 25%; /*Hvor på y-aksen den skal være*/
 }
 
+.gamleside{
+    text-align: center;
+}
+
 /*--------------------------------------------------------------------------------------*/
 
 /*-----Om meg--------------------------------------------------------------------------*/
@@ -165,12 +169,14 @@ body{
     "footer footer footer footer footer footer";
 }
 
-.songs{
+.songarea{
     grid-area: songs; /*Tildeler et grid-area som sier plasseringen i grids*/
+    text-align: center; /*Flytte alt til senter*/
+}
+
+.songs{
     max-width: 75%; /*Bestemmer max bredde*/
     border-radius: 10%; /*Bestemmer hvor rund hjørnene skal være*/
-    text-align: center; /*Flytte alt til senter*/
-    background-color: #005545;
 }
 
 /*--------------------------------------------------------------------------------------*/
@@ -375,6 +381,10 @@ body{
 
     .meg img{
         display: inline; /*Ikke gjemme elementet*/
+    }
+
+    .gamleside{
+        text-align: left;
     }
 
     .graf{
