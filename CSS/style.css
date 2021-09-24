@@ -52,6 +52,8 @@ body{
     grid-area: main; /*Tildeler et grid-area som sier plasseringen i grids*/
 }
 
+/*-------------------------------------Tekst-typer-----------------------------------------------------------------*/
+
 .h1{
     color: #1fa78f; /*Bestemmer fargen*/
     font-family: 'Montserrat', sans-serif; /*Bestemmer hvilken tekst type som skal brukes*/
@@ -77,6 +79,13 @@ body{
     padding-top: 10px; /*Flytte fra toppen med 10px*/
     text-align: center; /*Flytte alt til senter*/
     font-weight: 600; /*Bestemmer tykkelsen til teksten*/
+}
+
+.h4{
+    color: #005545; /*Bestemmer fargen*/
+    font-family: 'Montserrat', sans-serif; /*Bestemmer hvilken tekst type som skal brukes*/
+    font-size: 1.5em; /*Setter skrift størrelse*/
+    text-align: center; /*Flytte alt til senter*/
 }
 
 .p1{
@@ -106,13 +115,15 @@ body{
     text-align: center; /*Flytte alt til senter*/
 }
 
+/*-------------------------------------------Footer---------------------------------------------*/
+
 .footer{
     grid-area: footer; /*Tildeler et grid-area som sier plasseringen i grids*/
     text-align: center; /*Flytte alt til senter*/
 }
 
 
-/*--------------------------------------------------------------------------------------*/
+
 
 
 /*-----INDEX----------------------------------------------------------------------------*/
@@ -126,20 +137,15 @@ body{
     "header header header header header header"
     "menu menu menu menu menu menu"
     "main main main main main main"
-    /*"meg meg meg meg meg meg"*/
     "footer footer footer footer footer footer";
 }
 
-.meg{
-    grid-area: meg; /*Tildeler et grid-area som sier plasseringen i grids*/
-}
-
 .meg img{
-    display: none;
-    height: 400px;
-    position: absolute;
-    right: 0;
-    top: 25%;
+    display: none; /*Gjemmer elementet*/
+    height: 400px; /*Setter høyden*/
+    position: absolute; /*Kan kun være i akkurat den posisjonen vi ber den om*/
+    right: 0; /*Hvor på x-aksen den skal være*/
+    top: 25%; /*Hvor på y-aksen den skal være*/
 }
 
 /*--------------------------------------------------------------------------------------*/
@@ -164,6 +170,7 @@ body{
     max-width: 75%; /*Bestemmer max bredde*/
     border-radius: 10%; /*Bestemmer hvor rund hjørnene skal være*/
     text-align: center; /*Flytte alt til senter*/
+    background-color: #005545;
 }
 
 /*--------------------------------------------------------------------------------------*/
@@ -211,6 +218,10 @@ body{
     "footer footer footer footer footer footer";
 }
 
+.graf{
+    display: none; /*Gjemmer elementet*/
+}
+
 /*--------------------------------------------------------------------------------------*/
 
 /*-----Bilder----------------------------------------------------------------------------*/
@@ -218,14 +229,15 @@ body{
 .grid-bilder{
     display: grid; /*Sette opp grids*/
     grid-gap: 6px; /*Mellomrom mellom grids*/
-    grid-template-columns: 100px 1fr 1fr 1fr 100px; /*Sette opp kolonner i grids*/
-    grid-template-rows: 100px auto 1fr 1fr 50px; /*Sette opp rader i grids*/
+    grid-template-columns: 1fr 1fr; /*Sette opp kolonner i grids*/
+    grid-template-rows: 100px auto 1fr 1fr 1fr 50px; /*Sette opp rader i grids*/
     grid-template-areas: /*Sette opp grids og hvor grid area skal være på nettsiden*/
-    "header header header header header"
-    "menu menu menu menu menu"
-    ". bilde1 bilde2 bilde3 ."
-    ". bilde4 bilde5 bilde6 ."
-    "footer footer footer footer footer";
+    "header header"
+    "menu menu"
+    "bilde1 bilde2"
+    "bilde3 bilde4"
+    "bilde5 bilde6"
+    "footer footer";
 }
 
 .bilde{
@@ -281,14 +293,14 @@ body{
 @media only screen and (min-width: 1245px) {
     body {
         /*background-image: url(../Bilder/bakgrunn.png);*/
-        background-position: center;
-        background: linear-gradient(55deg, #ffffff 50%, #1fa78f 50%);
+        background-position: center; /*Setter bakgrunnen i senter*/
+        background: linear-gradient(55deg, #ffffff 50%, #1fa78f 50%); /*lager en hvit og grønn bakgrunn som er delt med en 55 graders strek over skjermen*/
     }
 
     .grid-index{
         display: grid; /*Sette opp grids*/
         grid-gap: 6px; /*Mellomrom mellom grids*/
-        min-height: 100vh;
+        min-height: 100vh; /*Bestemmer høyde*/
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /*Sette opp kolonner i grids*/
         grid-template-rows: 100px 1fr 100px; /*Sette opp rader i grids*/
         grid-template-areas: /*Sette opp grids og hvor grid area skal være på nettsiden*/
@@ -300,7 +312,7 @@ body{
     .grid-om_meg{
         display: grid; /*Sette opp grids*/
         grid-gap: 6px; /*Mellomrom mellom grids*/
-        min-height: 100vh;
+        min-height: 100vh; /*Bestemmer høyde*/
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /*Sette opp kolonner i grids*/
         grid-template-rows: 100px 1fr 100px; /*Sette opp rader i grids*/
         grid-template-areas: /*Sette opp grids og hvor grid area skal være på nettsiden*/
@@ -312,7 +324,7 @@ body{
     .grid-medier{
         display: grid; /*Sette opp grids*/
         grid-gap: 6px; /*Mellomrom mellom grids*/
-        min-height: 100vh;
+        min-height: 100vh; /*Bestemmer høyde*/
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /*Sette opp kolonner i grids*/
         grid-template-rows: 100px 1fr 100px; /*Sette opp rader i grids*/
         grid-template-areas: /*Sette opp grids og hvor grid area skal være på nettsiden*/
@@ -324,9 +336,9 @@ body{
     .grid-skoler{
         display: grid; /*Sette opp grids*/
         grid-gap: 6px; /*Mellomrom mellom grids*/
-        min-height: 100vh;
+        min-height: 100vh; /*Bestemmer høyde*/
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /*Sette opp kolonner i grids*/
-        grid-template-rows: 100px 1fr 50px; /*Sette opp rader i grids*/
+        grid-template-rows: 100px 1fr 100px; /*Sette opp rader i grids*/
         grid-template-areas: /*Sette opp grids og hvor grid area skal være på nettsiden*/
         "header header header menu menu menu"
         "main main main main main main"
@@ -336,7 +348,7 @@ body{
     .grid-bilder{
         display: grid; /*Sette opp grids*/
         grid-gap: 6px; /*Mellomrom mellom grids*/
-        min-height: 100vh;
+        min-height: 100vh; /*Bestemmer høyde*/
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /*Sette opp kolonner i grids*/
         grid-template-rows: 100px 1fr 1fr 100px; /*Sette opp rader i grids*/
         grid-template-areas: /*Sette opp grids og hvor grid area skal være på nettsiden*/
@@ -362,11 +374,11 @@ body{
     }
 
     .meg img{
-        display: inline;
+        display: inline; /*Ikke gjemme elementet*/
     }
 
-    .songs{
-        text-align: center; /*Flytte alt mot venstre*/
+    .graf{
+        display: inline; /*Ikke gjemme elementet*/
     }
 
     .snap{
@@ -396,6 +408,13 @@ body{
         padding-top: 20px; /*Flytte fra toppen med 20px*/
         text-align: left; /*Flytte alt mot venstre*/
         font-weight: 600; /*Bestemmer tykkelsen til teksten*/
+    }
+
+    .h4{
+        color: #005545; /*Bestemmer fargen*/
+        font-family: 'Montserrat', sans-serif; /*Bestemmer hvilken tekst type som skal brukes*/
+        font-size: 2em; /*Setter skrift størrelse*/
+        text-align: left; /*Flytte alt mot venstre*/
     }
 
     .p1{
