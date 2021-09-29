@@ -256,6 +256,7 @@ body{
 }
 
 .bilde1{
+    text-align: center; /*Flytte alt til senter*/
     grid-area: bilde1; /*Tildeler et grid-area som sier plasseringen i grids*/
     padding-top: 20px; /*Flytte fra toppen med 20px*/
     height: 300px; /*Bestemmer høyde*/
@@ -263,6 +264,7 @@ body{
 }
 
 .bilde2{
+    text-align: center; /*Flytte alt til senter*/
     grid-area: bilde2; /*Tildeler et grid-area som sier plasseringen i grids*/
     padding-top: 20px; /*Flytte fra toppen med 20px*/
     height: 300px; /*Bestemmer høyde*/
@@ -270,6 +272,7 @@ body{
 }
 
 .bilde3{
+    text-align: center; /*Flytte alt til senter*/
     grid-area: bilde3; /*Tildeler et grid-area som sier plasseringen i grids*/
     padding-top: 20px; /*Flytte fra toppen med 20px*/
     height: 300px; /*Bestemmer høyde*/
@@ -277,6 +280,7 @@ body{
 }
 
 .bilde4{
+    text-align: center; /*Flytte alt til senter*/
     grid-area: bilde4; /*Tildeler et grid-area som sier plasseringen i grids*/
     padding-top: 20px; /*Flytte fra toppen med 20px*/
     height: 300px; /*Bestemmer høyde*/
@@ -284,6 +288,7 @@ body{
 }
 
 .bilde5{
+    text-align: center; /*Flytte alt til senter*/
     grid-area: bilde5; /*Tildeler et grid-area som sier plasseringen i grids*/
     padding-top: 20px; /*Flytte fra toppen med 20px*/
     height: 300px; /*Bestemmer høyde*/
@@ -291,6 +296,7 @@ body{
 }
 
 .bilde6{
+    text-align: center; /*Flytte alt til senter*/
     grid-area: bilde6; /*Tildeler et grid-area som sier plasseringen i grids*/
     padding-top: 20px; /*Flytte fra toppen med 20px*/
     height: 300px; /*Bestemmer høyde*/
