@@ -300,7 +300,7 @@ body{
     body {
         /*background-image: url(../Bilder/bakgrunn.png);*/
         background-position: center; /*Setter bakgrunnen i senter*/
-        background: linear-gradient(55deg, #ffffff 50%, #1fa78f 50%); /*lager en hvit og grønn bakgrunn som er delt med en 55 graders strek over skjermen*/
+        background: linear-gradient(75deg, #ffffff 50%, #1fa78f 50%); /*lager en hvit og grønn bakgrunn som er delt med en 55 graders strek over skjermen*/
     }
 
     .grid-index{
