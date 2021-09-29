@@ -238,12 +238,15 @@ body{
     grid-template-columns: 1fr 1fr; /*Sette opp kolonner i grids*/
     grid-template-rows: 100px auto 1fr 1fr 1fr 50px; /*Sette opp rader i grids*/
     grid-template-areas: /*Sette opp grids og hvor grid area skal være på nettsiden*/
-    "header header"
-    "menu menu"
-    "bilde1 bilde2"
-    "bilde3 bilde4"
-    "bilde5 bilde6"
-    "footer footer";
+    "header"
+    "menu"
+    "bilde1"
+    "bilde2"
+    "bilde3"
+    "bilde4"
+    "bilde5"
+    "bilde6"
+    "footer";
 }
 
 .bilde{
