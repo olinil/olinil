@@ -203,8 +203,8 @@ body{
 }
 
 .snapcode img{
-    height: 400px; /*Bestemmer høyde*/
-    width: 400px; /*Bestemmer bredde*/
+    height: 200px; /*Bestemmer høyde*/
+    width: 200px; /*Bestemmer bredde*/
     padding: 50px; /*Lager mellomrom fra alle sider med 50px*/
 }
 
@@ -398,8 +398,8 @@ body{
 
     .snapcode img{
         float: right; /*Flytte alt mot høyre*/
-        height: 200px; /*Bestemmer høyde*/
-        width: 200px; /*Bestemmer bredde*/
+        height: 400px; /*Bestemmer høyde*/
+        width: 400px; /*Bestemmer bredde*/
         padding: 50px; /*Lager mellomrom fra alle sider med 50px*/
     }
 
