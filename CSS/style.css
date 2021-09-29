@@ -235,18 +235,18 @@ body{
 .grid-bilder{
     display: grid; /*Sette opp grids*/
     grid-gap: 6px; /*Mellomrom mellom grids*/
-    grid-template-columns: 1fr ; /*Sette opp kolonner i grids*/
+    grid-template-columns: 1fr 1fr; /*Sette opp kolonner i grids*/
     grid-template-rows: 100px auto 1fr 1fr 1fr 1fr 1fr 1fr 50px; /*Sette opp rader i grids*/
     grid-template-areas: /*Sette opp grids og hvor grid area skal være på nettsiden*/
-    "header"
-    "menu"
-    "bilde1"
-    "bilde2"
-    "bilde3"
-    "bilde4"
-    "bilde5"
-    "bilde6"
-    "footer";
+    "header header"
+    "menu menu"
+    "bilde1 bilde1"
+    "bilde2 bilde2"
+    "bilde3 bilde3"
+    "bilde4 bilde4"
+    "bilde5 bilde5"
+    "bilde6 bilde6"
+    "footer footer";
 }
 
 .bilde{
