@@ -52,6 +52,10 @@ body{
     grid-area: main; /*Tildeler et grid-area som sier plasseringen i grids*/
 }
 
+button{
+    border-radius: 90px;
+}
+
 /*-------------------------------------Tekst-typer-----------------------------------------------------------------*/
 
 .h1{
