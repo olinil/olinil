@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="worm.css">
+    <meta charset="UTF-8">
+    <title>Worm</title>
+</head>
+<body>
+    <div class="flex-container">
+            <div class="speed-container">
+                <button id="speedUp" onclick="speedUp()">Speed+</button>
+
+                <div id="text">Speed count: 
+                    <div id="FPS">6</div>
+                </div>
+
+                <button id="speedDown" onclick="speedDown()">Speed-</button>
+            </div>
+        <div id="score">0</div>
+    </div>
+
+    <div class="flex-container2">
+        <img width="20%" src="c62ae300-b6b4-11eb-8adf-974d86726d73.png">
+        <img justify-self="space-around" width="20%" height="17%" margin-top="50px" src="last ned.png">
+    </div>
+
+    <canvas id="wormBoard"></canvas>
+    <script src="worm.js"></script>
+
+    <div class="winning-message" id="winningMessage">
+        <div id="winningMessage">Game over<br>Press F5 to restart</div>
+    </div>
+    
+</body>
+</html>
