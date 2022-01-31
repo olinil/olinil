@@ -5,6 +5,10 @@ Mørekegrønn - #005545
 /IMG_2380.JPG
 */
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: #ffffff; /*Endre bakgrunnsfarge*/
     margin: 0; /*Fjerner alle "marger" som dytter alt i en rettning på siden*/
@@ -13,13 +17,14 @@ body{
 
     display: grid; /*Sette opp grids*/
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /*Sette opp kolonner i grids*/
-    grid-template-rows: 100vh 100vh 70px; /*Sette opp rader i grids*/
+    grid-template-rows: 100vh auto 70px; /*Sette opp rader i grids*/
     grid-template-areas: /*Sette opp grids og hvor grid area skal være på nettsiden*/
     "header header header header header header"
     "main main main main main main"
     "footer footer footer footer footer footer";
 
-    background-image: url(/Bilder/himmel.png);
+    /*background-image: url(/Bilder/himmel.png);*/
+    background-color: white;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 2130px;
@@ -52,7 +57,7 @@ body{
 .links a{
     transition: .3s; /*Setter tiden til 0.5 sekunder på a:hover*/
     text-decoration-line: none; /*Setter en linje under teksten som en tekstdekorasjon*/
-    color: white; /*Bestemmer fargen*/
+    color:  rgb(21, 144, 182); /*Bestemmer fargen*/
     font-family: 'Montserrat', sans-serif; /*Bestemmer hvilken tekst type som skal brukes*/
     padding: 10px; /*Lager mellomrom fra alle sider med 10px*/
     font-size: 1em; /*Setter skrift størrelse*/
@@ -60,8 +65,7 @@ body{
 }
 
 .links a:hover{
-    color: #666;
-    font-weight: 700;
+    color: black;
 }
 
 .title{
@@ -77,8 +81,8 @@ body{
 }
 
 .text1{
-    color: white;
-    font-size: 60px;
+    color: rgb(0, 0, 0);
+    font-size: 50px;
     font-weight: 700;
     letter-spacing: 8px;
     margin-bottom: 20px;
@@ -88,12 +92,12 @@ body{
 
 .text2{
     font-size: 30px;
-    color: #1C1827;
+    color: rgb(21, 144, 182);
 }
 
 @keyframes text{
     0%{
-        color: black;
+        color: rgb(179, 179, 179);
         margin-bottom: -40px;
     }
     30%{
@@ -112,34 +116,71 @@ body{
 }
 
 .arrow {
-    border: solid rgb(255, 255, 255);
+    border: solid  rgb(21, 144, 182);
     border-width: 0 5px 5px 0;
     display: inline-block;
     padding: 20px;
-    margin-top: 45%;
+    margin-top: 40%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.arrow:hover{
+    border-color: black;
 }
 
 /*-----Main-----------------------------------------------------*/
 
 .main{
     grid-area: main; /*Tildeler et grid-area som sier plasseringen i grids*/
-    background-image: url(/Bilder/solnedgang1.JPG);
-    background-size: 2130px;
 }
 
-.content-box {
+#down{
+    height: 20px;
+}
+
+section {
     padding: 20px;
-    margin-left: 25%;
-    margin-top: 10%;
-    width: 50%;
-    background-color: rgba(255, 255, 255, 0.466);
-    border-radius: 20px;
+    display: block;
+    text-align: center;
+    background: no-repeat;
+    background-image: linear-gradient(rgb(21, 144, 182), rgb(173, 173, 170));
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 50px;
+    border-radius: 60px;
+}
+
+button{
+    padding: 10px;
+    border-radius: 90px;
+    background-color: #ffffff;
+    transition: 0.3s;
+    border: solid  rgb(21, 144, 182);
+}
+
+button:hover{
+    background-color:  rgb(21, 144, 182);
+    border: solid white;
+}
+
+button a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    color:  rgb(21, 144, 182);
+    padding: 20px;
+}
+
+button a:hover{
+    color: white;
 }
 
 /*-------------------------------------Tekst-typer-----------------------------------------------------------------*/
 
 h1{
-    color: #666; /*Bestemmer fargen*/
+    color: white; /*Bestemmer fargen*/
     font-family: 'Muli', sans-serif; /*Bestemmer hvilken tekst type som skal brukes*/
     font-size: 3em; /*Setter skrift størrelse*/
     padding-top: 10px; /*Flytte fra toppen med 10px*/
@@ -148,7 +189,7 @@ h1{
 }
 
 h2{
-    color: #666; /*Bestemmer fargen*/
+    color: white; /*Bestemmer fargen*/
     font-family: 'Muli', sans-serif; /*Bestemmer hvilken tekst type som skal brukes*/
     font-size: 2em; /*Setter skrift størrelse*/
     line-height: 2em; /*Setter linjeavstand*/
@@ -157,7 +198,7 @@ h2{
 }
 
 p{
-    color: #666; /*Bestemmer fargen*/
+    color: white; /*Bestemmer fargen*/
     font-family: 'Muli', sans-serif; /*Bestemmer hvilken tekst type som skal brukes*/
     font-size: 1.7em; /*Setter skrift størrelse*/
     padding-top: 30px; /*Flytte fra toppen med 30px*/
@@ -172,7 +213,7 @@ p{
     grid-area: footer; /*Tildeler et grid-area som sier plasseringen i grids*/
     text-align: center; /*Flytte alt til senter*/
     background-color: white;
-    color: #666;
+    color: black;
     font-family: 'Muli', sans-serif; /*Bestemmer hvilken tekst type som skal brukes*/
     font-size: 1.5em;
     padding-top: 20px;
