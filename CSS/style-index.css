@@ -24,10 +24,10 @@ body{
     "footer footer footer footer footer footer";
 
     /*background-image: url(/Bilder/himmel.png);*/
-    background: url(/Bilder/meg_igjen.png);
+    background-color: white;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: 2130px;
+    background-size: cover;
 }
 
 /*-----Header-----------------------------------------------------*/
@@ -57,7 +57,7 @@ body{
 .links a{
     transition: .3s; /*Setter tiden til 0.5 sekunder på a:hover*/
     text-decoration-line: none; /*Setter en linje under teksten som en tekstdekorasjon*/
-    color:  rgb(21, 144, 182); /*Bestemmer fargen*/
+    color:  #1E4359; /*Bestemmer fargen*/
     font-family: 'Montserrat', sans-serif; /*Bestemmer hvilken tekst type som skal brukes*/
     padding: 10px; /*Lager mellomrom fra alle sider med 10px*/
     font-size: 1em; /*Setter skrift størrelse*/
@@ -65,7 +65,7 @@ body{
 }
 
 .links a:hover{
-    color: black;
+    color: #F24130;
 }
 
 .title{
@@ -81,7 +81,7 @@ body{
 }
 
 .text1{
-    color: rgb(0, 0, 0);
+    color: #1E4359;
     font-size: 50px;
     font-weight: 700;
     letter-spacing: 8px;
@@ -93,7 +93,7 @@ body{
 .text2{
     text-transform: uppercase;
     font-size: 30px;
-    color: rgb(21, 144, 182);
+    color: #F24130;
     text-align: center;
 }
 
@@ -124,7 +124,7 @@ body{
 }
 
 .arrow {
-    border: solid  rgb(21, 144, 182);
+    border: solid  #1E4359;
     border-width: 0 5px 5px 0;
     display: inline-block;
     padding: 20px;
@@ -134,7 +134,7 @@ body{
 }
 
 .arrow:hover{
-    border-color: black;
+    border-color: #F24130;
 }
 
 #down{
@@ -147,7 +147,7 @@ body{
     display: block;
     text-align: center;
     background: no-repeat;
-    background-image: linear-gradient(rgb(68, 68, 68), rgb(21, 144, 182));
+    background-image: linear-gradient(#D9C9BA, #F24130);
     width: 80%;
     height: 500px;
     padding-top: 100px;
@@ -177,7 +177,7 @@ body{
     grid-template-rows: min-content;
     gap: var(--spacer);
     padding: var(--spacer);
-    background: rgb(21, 144, 182);
+    background: #1E4359;
     border-radius: 5px;
     box-shadow: rgba(68, 68, 68, 0.336) 5px 5px;
     cursor: pointer;
