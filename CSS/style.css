@@ -27,7 +27,6 @@ body{
     text-align: center;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #666;
 }
 
 .header-nav{
@@ -47,7 +46,7 @@ body{
 .links a{
     transition: .3s; /*Setter tiden til 0.5 sekunder på a:hover*/
     text-decoration-line: none; /*Setter en linje under teksten som en tekstdekorasjon*/
-    color: white; /*Bestemmer fargen*/
+    color:  rgb(21, 144, 182); /*Bestemmer fargen*/
     font-family: 'Montserrat', sans-serif; /*Bestemmer hvilken tekst type som skal brukes*/
     padding: 10px; /*Lager mellomrom fra alle sider med 10px*/
     font-size: 1em; /*Setter skrift størrelse*/
@@ -55,8 +54,7 @@ body{
 }
 
 .links a:hover{
-    color: orange;
-    font-weight: 700;
+    color: black;
 }
 
 /*-----Main-----------------------------------------------------*/
