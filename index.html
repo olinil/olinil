@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" type="text/css" href="CSS/style-index.css">
     <link rel="stylesheet" type="text/css" href="CSS/style-index-winsize.css">
     <link rel="icon" href="/Bilder/logo.png">
@@ -38,6 +39,39 @@
                 <a href="/HTML/om meg.html">Om meg</a>
                 <a href="/index.html">Hjem</a>
             </div>
+
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn"></button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="/index.html">Hjem</a>
+                    <a href="/HTML/om meg.html">Om meg</a>
+                    <a href="/HTML/medier.html">Medier</a>
+                    <a href="/HTML/skoler.html">Skole</a>
+                    <a href="/HTML/bilder.html">Bilder</a>
+                </div>
+            </div>
+
+            <script>
+                /* When the user clicks on the button, 
+                toggle between hiding and showing the dropdown content */
+                function myFunction() {
+                    document.getElementById("myDropdown").classList.toggle("show");
+                }
+                
+                // Close the dropdown if the user clicks outside of it
+                window.onclick = function(event) {
+                    if (!event.target.matches('.dropbtn')) {
+                        var dropdowns = document.getElementsByClassName("dropdown-content");
+                        var i;
+                        for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                            if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                            }
+                        }
+                    }
+                }
+                </script>
 
         </div>
 
