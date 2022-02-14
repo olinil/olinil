@@ -24,10 +24,11 @@ body{
     "footer footer footer footer footer footer";
 
     /*background-image: url(/Bilder/himmel.png);*/
-    background-color: white;
+    background-image: url(/Bilder/hanne.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position-y: -100px;
 }
 
 /*-----Header-----------------------------------------------------*/
@@ -41,7 +42,7 @@ body{
 }
 
 .header-nav{
-    position: absolute;
+    position: fixed;
     color: #ffffff; /*Bestemmer fargen*/
     margin-top: 20px; /*Sette en marg på 20px fra toppen*/
     padding-bottom: 20px; /*Flytte fra bunnen med 20px*/
@@ -57,15 +58,17 @@ body{
 .links a{
     transition: .3s; /*Setter tiden til 0.5 sekunder på a:hover*/
     text-decoration-line: none; /*Setter en linje under teksten som en tekstdekorasjon*/
-    color:  #1E4359; /*Bestemmer fargen*/
+    color:  #F2D4C2; /*Bestemmer fargen*/
     font-family: 'Montserrat', sans-serif; /*Bestemmer hvilken tekst type som skal brukes*/
-    padding: 10px; /*Lager mellomrom fra alle sider med 10px*/
+    padding: 20px; /*Lager mellomrom fra alle sider med 10px*/
     font-size: 1em; /*Setter skrift størrelse*/
     float: right;
+    background-color: #8c8a6c;
 }
 
 .links a:hover{
-    color: #F24130;
+    color: #8C8A6C;
+    background-color: #f2d4c2;
 }
 
 .dropdown{
@@ -85,7 +88,7 @@ body{
 }
 
 .text1{
-    color: #1E4359;
+    color: #F1F2E9;
     font-size: 50px;
     font-weight: 700;
     letter-spacing: 8px;
@@ -97,13 +100,13 @@ body{
 .text2{
     text-transform: uppercase;
     font-size: 30px;
-    color: #F24130;
+    color: #261308;
     text-align: center;
 }
 
 @keyframes text{
     0%{
-        color: rgb(179, 179, 179);
+        color: #261308;
         margin-bottom: -40px;
     }
     30%{
@@ -120,6 +123,7 @@ body{
 
 .main{
     grid-area: main; /*Tildeler et grid-area som sier plasseringen i grids*/
+    background-color: #F1F2E9;
 }
 
 .down {
@@ -128,7 +132,7 @@ body{
 }
 
 .arrow {
-    border: solid  #1E4359;
+    border: solid  #8C8A6C;
     border-width: 0 5px 5px 0;
     display: inline-block;
     padding: 20px;
@@ -138,7 +142,7 @@ body{
 }
 
 .arrow:hover{
-    border-color: #F24130;
+    border-color: #F1F2E9;
 }
 
 #down{
@@ -151,14 +155,13 @@ body{
     display: block;
     text-align: center;
     background: no-repeat;
-    background-image: linear-gradient(#D9C9BA, #F24130);
-    width: 80%;
+    background-color: #8C8A6C;
+    width: 100%;
     height: 500px;
     padding-top: 100px;
     padding-bottom: 100px;
-    margin-left: 10%;
     margin-bottom: 50px;
-    border-radius: 60px;
+    margin-top: -20px;
 }
 
 /*-------------------------------media scroller------------------------------------------*/
@@ -181,11 +184,16 @@ body{
     grid-template-rows: min-content;
     gap: var(--spacer);
     padding: var(--spacer);
-    background: #1E4359;
+    background: #8C8A6C;
     border-radius: 5px;
     box-shadow: rgba(68, 68, 68, 0.336) 5px 5px;
     cursor: pointer;
     text-decoration: none;
+    transition: 0.3s;
+}
+
+.media-element:hover{
+    background-color: #403C26;
 }
 
 .media-element > img{
@@ -203,38 +211,65 @@ body{
     scroll-snap-align: start;
 }
 
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.arrow2 {
+    border: solid  #261308;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 60%;
+}
+
+.arrowbox{
+    background-color: #ffffff75;
+    height: 350px;
+    width: 200px;
+    position: absolute;
+    top: 187%;
+    left: 1800px;
+    transition: 0.3s;
+}
+
+.arrowbox:hover{
+    background-color: #ffffff94;
+}
+
+#right{
+    right: 20px;
+}
+
 /*-------------------------------------Tekst-typer-----------------------------------------------------------------*/
 
 h1{
     color: white; /*Bestemmer fargen*/
-    font-family: 'Muli', sans-serif; /*Bestemmer hvilken tekst type som skal brukes*/
+    font-family: 'Montserrat', sans-serif; /*Bestemmer hvilken tekst type som skal brukes*/
     font-size: 3em; /*Setter skrift størrelse*/
     padding-top: 10px; /*Flytte fra toppen med 10px*/
     text-align: center; /*Flytte alt til senter*/
-    font-weight: 600; /*Bestemmer tykkelsen til teksten*/
-}
-
-h2{
-    color: white; /*Bestemmer fargen*/
-    font-family: 'Muli', sans-serif; /*Bestemmer hvilken tekst type som skal brukes*/
-    font-size: 2em; /*Setter skrift størrelse*/
-    line-height: 2em; /*Setter linjeavstand*/
-    text-align: center; /*Flytte alt til senter*/
-    font-weight: 600; /*Bestemmer tykkelsen til teksten*/
+    font-weight: 700;
+    letter-spacing: 3px;
 }
 
 p{
     color: white; /*Bestemmer fargen*/
-    font-family: 'Muli', sans-serif; /*Bestemmer hvilken tekst type som skal brukes*/
+    font-family: 'Montserrat', sans-serif; /*Bestemmer hvilken tekst type som skal brukes*/
     font-size: 1.7em; /*Setter skrift størrelse*/
     padding-top: 30px; /*Flytte fra toppen med 30px*/
     padding-bottom: 39px; /*Flytte fra bunnen med 39px*/
     line-height: 1.5em; /*Setter linjeavstand*/
     text-align: center; /*Flytte alt til senter*/
+    font-weight: 500;
+    letter-spacing: 5px;
 }
 
 .fagnavn{
-    color: white;
+    color: #F1F2E9;
     text-transform: uppercase;
     font-size: 30px;
     text-align: center;
@@ -245,8 +280,8 @@ p{
 .footer{
     grid-area: footer; /*Tildeler et grid-area som sier plasseringen i grids*/
     text-align: center; /*Flytte alt til senter*/
-    background-color: white;
-    color: black;
+    background-color: #F1F2E9;
+    color: #261308;
     font-family: 'Muli', sans-serif; /*Bestemmer hvilken tekst type som skal brukes*/
     font-size: 1.5em;
     padding-top: 20px;
