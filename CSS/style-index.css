@@ -30,6 +30,7 @@ body{
     background-size: cover;
     background-position-y: -100px;
     background-position-x: left;
+    overflow-x: hidden;
 }
 
 /*-----Header-----------------------------------------------------*/
