@@ -29,6 +29,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: -100px;
+    background-position-x: left;
 }
 
 /*-----Header-----------------------------------------------------*/
