@@ -8,51 +8,82 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/style-index.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/style-index-winsize.css">
     <link rel="icon" href="../Bilder/logo.png">
     <title>Oliver Nilsson</title>
 </head>
 <body>
-    <div class="grid-om_meg">
 
 <!----------------------------------HEADER------------------------------------------------------>
 <!--Header skal være på toppen og skal ha ett ikon for nettsiden og en navigasjons-meny-->
 
-        <div class="header">
+<div class="header">
 
-            <div class="header-img">
-                <img src="../Bilder/logo.png" alt="LOGO">
-            </div>
+    <div class="title">
+        <span class="text1">Om meg</span>
+    </div>
 
+</div>
+
+<div class="header-nav">
+
+    <div class="links">
+        <a href="/HTML/bilder.html">Bilder</a>
+        <a href="/HTML/skoler.html">Skole</a>
+        <a href="/HTML/medier.html">Medier</a>
+        <a href="/HTML/om meg.html">Om meg</a>
+        <a href="/index.html">Hjem</a>
+    </div>
+
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">III</button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="/index.html">Hjem</a>
+            <a href="/HTML/om meg.html">Om meg</a>
+            <a href="/HTML/medier.html">Medier</a>
+            <a href="/HTML/skoler.html">Skole</a>
+            <a href="/HTML/bilder.html">Bilder</a>
         </div>
+    </div>
 
-        <div class="header-nav">
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+        </script>
 
-            <div class="header-nav">
-
-                <div class="links">
-                    <a href="/HTML/bilder.html">Bilder</a>
-                    <a href="/HTML/skoler.html">Skole</a>
-                    <a href="/HTML/medier.html">Medier</a>
-                    <a href="/HTML/om meg.html">Om meg</a>
-                    <a href="/index.html">Hjem</a>
-                </div>
-    
-            </div>
-
-        </div>
+</div>
 
 <!-----------------------------------MAIN-------------------------------------------------->
 <!--Main skal ha hovedinnholdet på siden-->
 
         <div class="main">
 
-            <div class="h2">
-                Om meg
-            </div>
-
-            <div class="p1">
-                    Jeg er en 17 år gammel gutt som går 2. klasse på
+            <section class="om-meg">
+    
+                <h1>
+                    Om meg
+                </h1>
+            
+                <p>
+                        Jeg er en 17 år gammel gutt som går 2. klasse på
                     <br>Informasjonsteknologi og komunikasjon(ITK) på
                     <br>Amalie Skram VGS. I helger jobber jeg på Coop Obs
                     <br>på Lagunen Senter for Blomsterringen. Der har jeg
@@ -62,29 +93,51 @@
                     <br>jobbet for BDO, REMA1000 og i barnehage.
                     <br>På fritiden spiller jeg en del gitar, trener å treningssenter, spiller 
                     <br>på PC og er med venner. Jeg er utadvent og lærer raskt.
-            </div>
+                </p>
+            
+            </section>
 
+        <!-------------------------------scroller---------------------------------->
+
+    <div class="text2">Favoritt sanger</div>
+
+    <div class="media-scroller snaps-inline">
+        <a class="media-element" href="https://open.spotify.com/track/48UPSzbZjgc449aqz8bxox?si=ca51448cb1f2492b" target="_blank">
+            <img src="/Bilder/californication.jpg">
+            <p1 class="sangnavn">Californication | Red Hot Chilli Peppers</p1>
+        </a>
+        <a class="media-element" href="/HTML/FAG/Driftstøtte.html">
+            <img src="/Bilder/servere.jpg">
+            <p1 class="sangnavn">Driftstøtte</p1>
+        </a>
+        <a class="media-element" href="/HTML/FAG/Brukerstøtte.html">
+            <img src="/Bilder/brukerstøtte.jpg">
+            <p1 class="sangnavn">Brukerstøtte</p1>
+        </a>
+        <a class="media-element" href="/HTML/FAG/Samfunnskunskap.html">
+            <img src="/Bilder/samfunn.png">
+            <p1 class="sangnavn">Samfunnskunskap</p1>
+        </a>
+        <a class="media-element" href="/HTML/FAG/Norsk.html">
+            <img src="/Bilder/bok.jpg">
+            <p1 class="sangnavn">Norsk</p1>
+        </a>
+        <a class="media-element" href="/HTML/FAG/Gym.html">
+            <img src="/Bilder/gym.jpg">
+            <p1 class="sangnavn">Gym</p1>
+            <div id="right"></div>
+        </a>
+    </div>
+        <div class="arrowbox">
+            <a href="#right"><i class="arrow2 right"></i></a>
         </div>
-
-        <div class="songarea">
-
-            <div class="p2">
-                    Californication
-                <br>Red Hot Chilli Peppers
-            </div>
-
-            <a class="songs" href="https://open.spotify.com/track/48UPSzbZjgc449aqz8bxox?si=ca51448cb1f2492b" target="_blank"><img class="songs" src="../Bilder/californication.jpg"></a>
-
-        </div>
+</div>
 
 <!-----------------------------------FOOTER----------------------------------------------------->
 <!--Footer skal være på bunnen av nettsiden og skal markere slutten på nettsiden-->
 
         <div class="footer">
-
-            <div class="p2">
                 Oliver Nilsson © 2021
-            </div>
 
         </div>
 

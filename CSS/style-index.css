@@ -30,6 +30,7 @@ body{
     background-size: cover;
     background-position-y: -100px;
     background-position-x: left;
+    background-size: 100%;
     overflow-x: hidden;
 }
 
@@ -147,12 +148,12 @@ body{
 }
 
 #down{
-    height: 20px;
+    height: 0px;
 }
 
 /*-------sections---------------------------*/
 
-.intro{
+.intro, .om-meg{
     display: block;
     text-align: center;
     background: no-repeat;
@@ -162,7 +163,6 @@ body{
     padding-top: 100px;
     padding-bottom: 100px;
     margin-bottom: 50px;
-    margin-top: -20px;
 }
 
 /*-------------------------------media scroller------------------------------------------*/
@@ -229,11 +229,9 @@ body{
 
 .arrowbox{
     background-color: #ffffff75;
-    height: 453px;
+    padding-top: 4rem;
     width: 100px;
     position: absolute;
-    top: 187%;
-    left: 95vw;
     transition: 0.3s;
     overflow-y: hidden;
 }
@@ -270,7 +268,7 @@ p{
     letter-spacing: 5px;
 }
 
-.fagnavn{
+.fagnavn, .sangnavn{
     color: #F1F2E9;
     text-transform: uppercase;
     font-size: 30px;
