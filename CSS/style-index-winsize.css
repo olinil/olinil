@@ -26,6 +26,10 @@
             margin-bottom: -30px;
         }
     }
+
+    .arrowbox{
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 1250px) {
@@ -175,6 +179,6 @@
     }
 
     .media-scroller{
-        grid-auto-columns: 83%;
+        grid-auto-columns: 98%;
     }
 }
