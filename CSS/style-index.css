@@ -58,17 +58,15 @@ body{
 .links a{
     transition: .3s; /*Setter tiden til 0.5 sekunder på a:hover*/
     text-decoration-line: none; /*Setter en linje under teksten som en tekstdekorasjon*/
-    color:  #F2D4C2; /*Bestemmer fargen*/
+    color:  #F1F2E9; /*Bestemmer fargen*/
     font-family: 'Montserrat', sans-serif; /*Bestemmer hvilken tekst type som skal brukes*/
     padding: 20px; /*Lager mellomrom fra alle sider med 10px*/
     font-size: 1em; /*Setter skrift størrelse*/
     float: right;
-    background-color: #8c8a6c;
 }
 
 .links a:hover{
-    color: #8C8A6C;
-    background-color: #f2d4c2;
+    background-color: #f1f2e97a;
 }
 
 .dropdown{
@@ -172,7 +170,7 @@ body{
     display: grid;
     gap: var(--spacer);
     grid-auto-flow: column;
-    grid-auto-columns: 21%;
+    grid-auto-columns: 31%;
 
     padding: 2rem;
 
@@ -224,12 +222,12 @@ body{
     padding: 20px;
     cursor: pointer;
     transition: 0.3s;
-    margin-top: 60%;
+    margin-top:100%;
 }
 
 .arrowbox{
     background-color: #ffffff75;
-    height: 350px;
+    height: 453px;
     width: 200px;
     position: absolute;
     top: 187%;
