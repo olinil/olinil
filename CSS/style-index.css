@@ -17,7 +17,7 @@ body{
 
     display: grid; /*Sette opp grids*/
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /*Sette opp kolonner i grids*/
-    grid-template-rows: 100vh auto 70px; /*Sette opp rader i grids*/
+    grid-template-rows: 100vh auto 200px; /*Sette opp rader i grids*/
     grid-template-areas: /*Sette opp grids og hvor grid area skal være på nettsiden*/
     "header header header header header header"
     "main main main main main main"
@@ -132,11 +132,12 @@ body{
 }
 
 .arrow {
-    border: solid  #8C8A6C;
+    border: solid  #F1F2E9;
     border-width: 0 5px 5px 0;
     display: inline-block;
     padding: 20px;
-    margin-top: 40%;
+    top: 90vh;
+    position: absolute;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -284,5 +285,5 @@ p{
     color: #261308;
     font-family: 'Muli', sans-serif; /*Bestemmer hvilken tekst type som skal brukes*/
     font-size: 1.5em;
-    padding-top: 20px;
+    padding-top: 100px;
 }
