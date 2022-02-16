@@ -221,16 +221,17 @@ body{
     border: solid  #261308;
     border-width: 0 5px 5px 0;
     display: inline-block;
-    padding: 20px;
+    padding: 30px;
     cursor: pointer;
     transition: 0.3s;
-    margin-top:200%;
+    margin-top:250%;
 }
 
 .arrowbox{
     background-color: #ffffff75;
-    padding-top: 4rem;
+    height: 46%;
     width: 100px;
+    right: 0;
     position: absolute;
     transition: 0.3s;
     overflow-y: hidden;
