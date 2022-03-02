@@ -217,40 +217,6 @@ body{
     scroll-snap-align: start;
 }
 
-.right {
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-}
-
-.arrow2 {
-    border: solid  #261308;
-    border-width: 0 5px 5px 0;
-    display: inline-block;
-    padding: 30px;
-    cursor: pointer;
-    transition: 0.3s;
-    margin-top: 20vh;
-}
-
-.arrowbox{
-    background-color: #ffffff75;
-    width: 100px;
-    transition: 0.3s;
-    overflow-y: hidden;
-    position: absolute;
-    top: 169.8%;
-    height: 537px;
-    right: 0;
-}
-
-.arrowbox:hover{
-    background-color: #ffffff94;
-}
-
-#right{
-    right: 20px;
-}
-
 /*-------------------------------------Tekst-typer-----------------------------------------------------------------*/
 
 h1{

@@ -18,64 +18,9 @@
 <!----------------------------------HEADER------------------------------------------------------>
 <!--Header skal være på toppen og skal ha ett ikon for nettsiden og en navigasjons-meny-->
 
-<div class="header">
-
-    <a href="/index.html"><video autoplay muted lang="myVideo">
-        <source src="/Bilder/LogoAnimation.mp4" type="video/mp4">
-    </video></a>
-
-      <a href="/index.html"><img src="/Bilder/ON-logo.png" height="250px"></a>
-
-    <div class="title">
-        <span class="text1">Om meg</span>
-    </div>
-
-</div>
-
-<div class="header-nav">
-
-    <div class="links">
-        <a href="/HTML/bilder.html">Bilder</a>
-        <a href="/HTML/skoler.html">Skole</a>
-        <a href="/HTML/medier.html">Medier</a>
-        <a href="/HTML/om meg.html">Om meg</a>
-        <a href="/index.html">Hjem</a>
-    </div>
-
-    <div class="dropdown">
-        <button onclick="myFunction()" class="dropbtn">III</button>
-        <div id="myDropdown" class="dropdown-content">
-            <a href="/index.html">Hjem</a>
-            <a href="/HTML/om meg.html">Om meg</a>
-            <a href="/HTML/medier.html">Medier</a>
-            <a href="/HTML/skoler.html">Skole</a>
-            <a href="/HTML/bilder.html">Bilder</a>
-        </div>
-    </div>
-
-    <script>
-        /* When the user clicks on the button, 
-        toggle between hiding and showing the dropdown content */
-        function myFunction() {
-            document.getElementById("myDropdown").classList.toggle("show");
-        }
-        
-        // Close the dropdown if the user clicks outside of it
-        window.onclick = function(event) {
-            if (!event.target.matches('.dropbtn')) {
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
-                    }
-                }
-            }
-        }
-        </script>
-
-</div>
+<?php
+    include "../Pre-buildt/pre-header-ommeg.html";
+?>
 
 <!-----------------------------------MAIN-------------------------------------------------->
 <!--Main skal ha hovedinnholdet på siden-->
@@ -134,30 +79,9 @@
 <!-----------------------------------FOOTER----------------------------------------------------->
 <!--Footer skal være på bunnen av nettsiden og skal markere slutten på nettsiden-->
 
-<div class="footer">
-
-    <a href="/index.html"><img src="/Bilder/ON-logo.png" height="200px"></a>
-
-    <br><br><br>
-
-    Olinil.com © 2022
-
-    <br><br><br>
-    <div class="links">
-        <a href="/index.html">Hjem</a>
-        <a href="/HTML/om meg.html">Om meg</a>
-        <a href="/HTML/medier.html">Medier</a>
-        <a href="/HTML/skoler.html">Skole</a>
-        <a href="/HTML/bilder.html">Bilder</a>
-
-        <a href="/HTML/FAG/Utvikling.html">Utvikling</a>
-        <a href="/HTML/FAG/Driftstøtte.html">Driftstøtte</a>
-        <a href="/HTML/FAG/Brukerstøtte.html">Brukerstøtte</a>
-        <a href="/HTML/FAG/Norsk.html">Norsk</a>
-        <a href="/HTML/FAG/Samfunnskunskap.html">Samfunnskunskap</a>
-        <a href="/HTML/FAG/Gym.html">Gym</a>
-    </div>
-</div>
+<?php
+    include "../Pre-buildt/pre-footer.html";
+?>
 
 <!--------------------------------------------------------------------------------------------->
 
