@@ -1,0 +1,208 @@
+@media only screen and (max-width: 1500px) {
+    body {
+      background-position-x: center;
+      background-size: 150vh;
+    }
+
+    .text1{
+        font-size: 35px;
+    }
+    
+    .text2{
+        font-size: 20px;
+    }
+
+    @keyframes text{
+        0%{
+            color: rgb(179, 179, 179);
+            margin-bottom: -30px;
+        }
+        30%{
+            letter-spacing: 25px;
+            margin-bottom: -30px;
+        }
+        85%{
+            letter-spacing: 8px;
+            margin-bottom: -30px;
+        }
+    }
+
+    .arrowbox{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .text1{
+        font-size: 25px;
+    }
+    
+    .text2{
+        font-size: 20px;
+    }
+
+    @keyframes text{
+        0%{
+            color: rgb(179, 179, 179);
+            margin-bottom: -25px;
+        }
+        30%{
+            letter-spacing: 15px;
+            margin-bottom: -25px;
+        }
+        85%{
+            letter-spacing: 8px;
+            margin-bottom: -25px;
+        }
+    }
+
+    .media-scroller{
+        grid-auto-columns: 53%;
+    }
+}
+
+@media only screen and (max-width: 825px) {
+    .text1{
+        animation: text 2s 1;
+    }
+
+    @keyframes text{
+        0%{
+            color: rgb(179, 179, 179);
+            margin-bottom: -25px;
+        }
+        30%{
+            letter-spacing: 10px;
+            margin-bottom: -25px;
+        }
+        85%{
+            letter-spacing: 8px;
+            margin-bottom: -25px;
+        }
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    body {
+        background-color: rgb(85, 92, 89);
+    }
+
+    .header-nav .links{
+        display: none;
+    }
+
+    .dropbtn {
+        border: none;
+        background: none;
+        color: #F1F2E9;
+        padding: 12px 16px;
+        font-size: 30px;
+        cursor: pointer;
+        transition: 0.3s;
+        transform: rotate(90deg);
+        z-index: 1;
+    }
+      
+    .dropbtn:hover, .dropbtn:focus {
+        color: #261308;
+    }
+    
+    .dropdown {
+        position: relative;
+        display: block;
+        float: right;
+        right: 30px;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        text-align: center;
+        background-color: #8c8a6cb2;
+        height: 60vh;
+        width: 150vw;
+        top: -60px;
+        left: -100vw;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        border-radius: 0 0 90px 90px;
+        animation: meny 1.5s 1;
+        overflow: hidden;
+    }
+
+    @keyframes meny{
+        0%{
+            height: 0vh;
+            width: 0vw;
+            top: -60px;
+            left: 50vw;
+        }
+    }
+    
+    .dropdown-content a {
+        color: #F1F2E9;
+        padding: 20px 50px;
+        text-decoration: none;
+        display: block;
+        margin-top: 40px;
+    }
+      
+    .dropdown a:hover {
+        color: #261308;
+    }
+      
+    .show {
+        display: block;
+    }
+
+    .text1{
+        animation: none;
+    }
+
+    .intro{
+        display: block;
+        text-align: center;
+        background: no-repeat;
+        background-color: #8C8A6C;
+        width: 100%;
+        height: auto;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        margin-bottom: 50px;
+        margin-top: -20px;
+    }
+
+    h1{
+        color: white; /*Bestemmer fargen*/
+        font-family: 'Montserrat', sans-serif; /*Bestemmer hvilken tekst type som skal brukes*/
+        font-size: 2em; /*Setter skrift størrelse*/
+        padding-top: 10px; /*Flytte fra toppen med 10px*/
+        text-align: center; /*Flytte alt til senter*/
+        font-weight: 700;
+        letter-spacing: 3px;
+    }
+    
+    p{
+        color: white; /*Bestemmer fargen*/
+        font-family: 'Montserrat', sans-serif; /*Bestemmer hvilken tekst type som skal brukes*/
+        font-size: 1em; /*Setter skrift størrelse*/
+        padding-top: 30px; /*Flytte fra toppen med 30px*/
+        padding-bottom: 39px; /*Flytte fra bunnen med 39px*/
+        line-height: 1.5em; /*Setter linjeavstand*/
+        text-align: center; /*Flytte alt til senter*/
+        font-weight: 500;
+        letter-spacing: 5px;
+    }
+
+    .media-scroller{
+        grid-auto-columns: 98%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .media-scroller{
+        grid-auto-columns: 93%;
+    }
+}
