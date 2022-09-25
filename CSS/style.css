@@ -145,7 +145,6 @@ body{
     display: inline-block;
     padding: 20px;
     top: 90vh;
-    left: 49%;
     position: absolute;
     cursor: pointer;
     transition: 0.3s;

@@ -1,0 +1,50 @@
+--------------------------------------------
+Plan:
+
+-Home page
+-About me and the website
+-Media
+-School/work
+    -Shyer AS
+    -Meny
+    -Utvikting
+    -Driftsfag
+    -Brukerstøtte
+-Galary
+-General Updates(Blog)
+    -News?
+    
+-------------------------------------------
+
+
+
+Home -> 
+
+------------------------------------------------------------------
+Logo                                  Home Blog Galary About NO/EN
+
+
+                    Welcome to
+                    Olinil.com
+
+                        V
+
+------------------------------------------------------------------
+                    In Short:
+        Hi! Im Oliver, I am a 17 year old boy from Norway.
+        I work IT-consulting and managing. I made this site
+        as my home site where I will share a bit about me,
+        pictures and general information. :)
+
+------------------------------------------------------------------
+                -Media  Scroller-
+                -               -
+                -               -
+                -               -
+                -               -
+
+------------------------------------------------------------------
+
+                    Logo
+
+*Buttons*
