@@ -83,9 +83,6 @@
 }
 
 @media only screen and (max-width: 700px) {
-    body {
-        background-color: rgb(85, 92, 89);
-    }
 
     .header-nav .links{
         display: none;
@@ -94,7 +91,7 @@
     .dropbtn {
         border: none;
         background: none;
-        color: #F1F2E9;
+        color: #000000;
         padding: 12px 16px;
         font-size: 30px;
         cursor: pointer;
@@ -108,25 +105,24 @@
     }
     
     .dropdown {
-        position: relative;
+        position: absolute;
         display: block;
+        text-align: center;
         float: right;
-        right: 30px;
+        right: 1rem;
     }
 
     .dropdown-content {
         display: none;
         position: absolute;
         text-align: center;
-        background-color: #8c8a6cb2;
-        height: 60vh;
-        width: 150vw;
-        top: -60px;
-        left: -100vw;
+        background-color: white;
+        height: auto;
+        width: 100vw;
+        top: -1rem;
+        right: -1rem;
         overflow: auto;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
-        border-radius: 0 0 90px 90px;
         animation: meny 1.5s 1;
         overflow: hidden;
     }
@@ -135,13 +131,13 @@
         0%{
             height: 0vh;
             width: 0vw;
-            top: -60px;
-            left: 50vw;
+            top: 0;
+            left: 100vw;
         }
     }
     
     .dropdown-content a {
-        color: #F1F2E9;
+        color: black;
         padding: 20px 50px;
         text-decoration: none;
         display: block;

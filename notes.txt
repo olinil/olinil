@@ -21,7 +21,7 @@ Plan:
 Home -> 
 
 ------------------------------------------------------------------
-Logo                                  Home Blog Galary About NO/EN
+Logo                          Home Blog Galary About Contact NO/EN
 
 
                     Welcome to
