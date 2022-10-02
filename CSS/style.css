@@ -13,6 +13,7 @@ html{
 
 *{
     font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
 }
 
 body{
@@ -195,7 +196,10 @@ body{
 }
 
 .pic img{
-    width: 45vw;
+    width: 40vw;
+    padding: 2.5vw;
+    border-left: solid black 1px;
+    border-right: solid black 1px;
 }
 
 .txt{
@@ -235,8 +239,9 @@ body{
 }
 
 .media-element:hover{
-    background-color: #f1f2e97a;
+    background-color: white;
     color: black;
+    border: solid black 1px;
 }
 
 .media-element > img{
@@ -259,16 +264,24 @@ body{
     color: white;
 }
 
-.media-element-gallery:hover{
-    background-color: #f1f2e97a;
-    color: black;
-}
-
 .media-element-gallery > img{
     border: solid black 5px;
     inline-size: 100%;
     aspect-ratio: 20 / 15;
     object-fit: cover;
+}
+
+.media-scroller-school{
+    --spacer: 2rem;
+    display: grid;
+    gap: var(--spacer);
+    grid-auto-flow: column;
+    grid-auto-columns: 51%;
+
+    padding: 2rem;
+
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
 }
 
 /*-----------------------------------------------------------*/
@@ -292,6 +305,18 @@ h1{
     letter-spacing: 3px;
 }
 
+a{
+    color: black;
+}
+
+h2{
+    color: white; /*Bestemmer fargen*/
+    font-size: 3em; /*Setter skrift størrelse*/
+    padding-top: 10px; /*Flytte fra toppen med 10px*/
+    text-align: center; /*Flytte alt til senter*/
+    letter-spacing: 3px;
+}
+
 p{
     color: black; /*Bestemmer fargen*/
     font-size: 1.7em; /*Setter skrift størrelse*/
@@ -303,7 +328,6 @@ p{
 }
 
 .fagnavn, .sangnavn{
-    text-transform: uppercase;
     font-size: 30px;
     text-align: center;
 }
