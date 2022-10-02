@@ -11,6 +11,10 @@ html{
     scroll-behavior: smooth;
 }
 
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
 body{
     margin: 0; /*Fjerner alle "marger" som dytter alt i en rettning på siden*/
     padding: 0; /*Fjerner padding på hele nettsiden*/
@@ -41,9 +45,9 @@ body{
 
 .header-nav{
     position: fixed;
-    background-color: #ffffff;
+    background-color: white;
     width: 100%;
-    height: 9rem;
+    height: 5rem;
     text-transform: uppercase;
     text-align: center;
     z-index: 1;
@@ -51,11 +55,13 @@ body{
 
 .header-nav img{
     position: absolute;
-    left: 20px;
+    left: 2rem;
+    height: 4rem;
+    padding: 0.5rem;
 }
 
 .links{
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
 
 .links a{
@@ -68,7 +74,6 @@ body{
 
 .links a:hover{
     background-color: #f1f2e97a;
-    font-weight: 800;
 }
 
 .dropdown{
@@ -79,7 +84,6 @@ body{
 .header{
     grid-area: header; /*Tildeler et grid-area som sier plasseringen i grids*/
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
 
@@ -125,11 +129,10 @@ body{
 .text1{
     color: #F1F2E9;
     font-size: 50px;
-    font-weight: 700;
     letter-spacing: 8px;
     margin-bottom: 20px;
     position: relative;
-    animation: text 3s 1;
+    animation: text1 3s 1;
 }
 
 .text2{
@@ -139,7 +142,16 @@ body{
     text-align: center;
 }
 
-@keyframes text{
+.text3{
+    color: #F1F2E9;
+    font-size: 50px;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+    position: relative;
+    animation: text3 3s 1;
+}
+
+@keyframes text1{
     0%{
         color: black;
         margin-bottom: -40px;
@@ -154,6 +166,18 @@ body{
     }
 }
 
+@keyframes text3{
+    0%{
+        color: black;
+    }
+    30%{
+        letter-spacing: 25px;
+    }
+    85%{
+        letter-spacing: 8px;
+    }
+}
+
 /*-----Main-----------------------------------------------------*/
 
 .main{
@@ -163,18 +187,26 @@ body{
 
 /*-------sections---------------------------*/
 
-.intro, .om-meg{
-    display: block;
-    text-align: center;
-    background: no-repeat;
-    width: 100%;
-    height: 500px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    margin-bottom: 50px;
+.section{
+    display: flex;
+    column-gap: 4vw;
+    padding: 5rem;
+    border-top: solid black 1px;
+}
+
+.pic img{
+    width: 45vw;
+}
+
+.txt{
+    width: 45vw;
 }
 
 /*-------------------------------media scroller------------------------------------------*/
+.scroller{
+    padding-top: 5rem;
+    border-top: solid black 1px;
+}
 
 .media-scroller{
     --spacer: 2rem;
@@ -213,6 +245,34 @@ body{
     object-fit: cover;
 }
 
+/*-----------------------------------------------------------*/
+
+.media-element-gallery{
+    display: grid;
+    grid-template-rows: min-content;
+    gap: var(--spacer);
+    background: black;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s;
+    color: white;
+}
+
+.media-element-gallery:hover{
+    background-color: #f1f2e97a;
+    color: black;
+}
+
+.media-element-gallery > img{
+    border: solid black 5px;
+    inline-size: 100%;
+    aspect-ratio: 20 / 15;
+    object-fit: cover;
+}
+
+/*-----------------------------------------------------------*/
+
 .snaps-inline{
     scroll-snap-type: inline mandatory;
     scroll-padding-inline: 2rem;
@@ -226,23 +286,19 @@ body{
 
 h1{
     color: black; /*Bestemmer fargen*/
-    font-family: 'Montserrat', sans-serif; /*Bestemmer hvilken tekst type som skal brukes*/
     font-size: 3em; /*Setter skrift størrelse*/
     padding-top: 10px; /*Flytte fra toppen med 10px*/
     text-align: center; /*Flytte alt til senter*/
-    font-weight: 700;
     letter-spacing: 3px;
 }
 
 p{
     color: black; /*Bestemmer fargen*/
-    font-family: 'Montserrat', sans-serif; /*Bestemmer hvilken tekst type som skal brukes*/
     font-size: 1.7em; /*Setter skrift størrelse*/
     padding-top: 30px; /*Flytte fra toppen med 30px*/
     padding-bottom: 39px; /*Flytte fra bunnen med 39px*/
     line-height: 1.5em; /*Setter linjeavstand*/
     text-align: center; /*Flytte alt til senter*/
-    font-weight: 500;
     letter-spacing: 5px;
 }
 
@@ -255,21 +311,28 @@ p{
 /*-------------------------------------------Footer---------------------------------------------*/
 
 .footer{
-    grid-area: footer; /*Tildeler et grid-area som sier plasseringen i grids*/
-    text-align: center; /*Flytte alt til senter*/
+    grid-area: footer;
+    text-align: center;
     background-color: black;
     color: #fff;
-    font-family: 'Muli', sans-serif; /*Bestemmer hvilken tekst type som skal brukes*/
     font-size: 1.5em;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 4rem;
 }
 
-.footer .links{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+.footerlinks{
+    display: flex;
+    width: 70%;
+    margin-left: 15%;
 }
 
 .footer .links a{
     color: #fff;
+    border-radius: 90px;
+    padding: 2rem;
+    line-height: 6rem;
+}
+
+.footer .links a:hover{
+    color: black;
+    background-color: white;
 }
