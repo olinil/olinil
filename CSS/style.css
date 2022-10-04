@@ -195,6 +195,11 @@ body{
     border-top: solid black 1px;
 }
 
+iframe{
+    aspect-ratio: 16 / 6;
+    height: 40rem;
+}
+
 .pic img{
     width: 40vw;
     padding: 2.5vw;

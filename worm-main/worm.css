@@ -85,6 +85,7 @@
 
 body{
     background-color: rgb(88, 216, 210);
+    overflow: hidden;
 }
 
 #speedUp{
