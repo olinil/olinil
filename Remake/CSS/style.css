@@ -1,0 +1,204 @@
+/*
+white: #F3E8EE
+light-green: #BACDB0
+light-medium-green: #96B495
+medium-green: #729B79
+dark-green: #506454
+dark-gray: #2E2C2F
+*/
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/*CURSOR TRACKER*/
+.cursor-tracker {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 5px;
+    height: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .25s;
+}
+
+/*VIDEO INTRO*/
+
+/* Style the video container to cover the entire page */
+#video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+}
+
+/* Style the video to fill the container */
+#video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Hide the video container when the video has ended */
+#video-container.hidden {
+    display: none;
+}
+
+/*VIDEO INTRO END*/
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 10rem;
+}
+
+.header-section {
+    height: 80vh;
+    background-color: #F3E8EE;
+    color: #2E2C2F;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/Bilder/Heaven3.png);
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+/*NAVIGATION*/
+.nav-bar {
+    background-color: #729B79;
+    height: 10vh;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 0 45px 0;
+    z-index: 8000;
+}
+
+.nav-logo {
+    margin-left: 2rem;
+}
+
+.nav-logo img{
+    max-height: 5rem;
+}
+
+.nav-menu {
+    margin-right: 2rem;
+    display: flex;
+}
+
+.nav-btn {
+    transition: 1s;
+    padding: 1rem;
+    border-radius: 90px;
+    border: none;
+    margin: 0.5rem;
+    background-color: #96B495;
+    color: #F3E8EE;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav-btn:hover {
+    transition: 1s;
+    background-color: #F3E8EE;
+    color: #96b495;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.about_me-section {
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    text-align: center;
+}
+
+.about_shyer-section {
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.section-image img {
+    max-width: 50rem;
+}
+
+.section-text {
+    max-width: 50rem;
+}
+
+/*GALLERY*/
+.gallery-wrapper {
+    align-items: center;
+}
+
+.gallery-titles {
+    padding: 2rem;
+}
+
+.splide {
+    max-width: 60rem;
+}
+
+.splide__slide {
+    height: 40rem;
+    background-color: #F3E8EE;
+    text-align: center;
+}
+
+.gallery-image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*CAROUSEL PROGRESS*/
+
+.my-slider-progress {
+    background: #729B79;
+}
+
+.my-slider-progress-bar {
+    background: greenyellow;
+    height: 2px;
+    transition: width 400ms ease;
+    width: 0;
+}
+
+/*TEXT*/
+h1 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 2rem;
+}

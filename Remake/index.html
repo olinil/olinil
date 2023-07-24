@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>olinil.com</title>
+</head>
+<body>
+    <!--Cursor tracker-->
+    <div class="cursor-tracker">
+        <!-- Picture here -->
+        <img src="/Bilder/corgi.png" height="100px">
+    </div>
+
+    <!-- Video container -->
+    <div id="video-container">
+        <video autoplay muted onended="hideVideo()" id="introVideo">
+        <source src="/Bilder/LogoAnimation.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="main-wrapper">
+        <section class="header-section">
+            <h1 id="welcome-text">Welcome</h1>
+        </section>
+
+        <div class="nav-bar">
+            <div class="nav-logo">
+                <img src="/Bilder/LogoWhiteNoTXT.png" alt="Logo">
+            </div>
+            <div class="nav-menu">
+                <button class="nav-btn home-btn" id="homeButton"><span class="material-symbols-outlined">home</span></button>
+                <button class="nav-btn" id="aboutButton">About</button>
+                <button class="nav-btn" id="someButton">Sosial Media</button>
+                <button class="nav-btn" id="schoolWorkButton">School & Work</button>
+                <button class="nav-btn" id="galleryButton">Gallery</button>
+                <button class="nav-btn" id="contactButton">Contact</button>
+            </div>
+        </div>
+
+        <section class="about_me-section">
+            <div class="section-image">
+                <img src="/Bilder/OliverSolnedgang.JPG">
+            </div>
+            <div class="section-text">
+                <h1>
+                    This is me
+                </h1>
+    
+                <p>
+                    Hi! Im Oliver, I am a 17 year old boy from Norway. I work IT-consulting and managing. I made this site as my home site where I will share a bit about me, pictures and general information. :)!
+                </p>
+            </div>
+        </section>
+    
+        <section class="about_shyer-section">
+            <div class="section-image">
+                <img src="/Bilder/Shyer Logo -Black White.png">
+            </div>
+            <div class="section-text">
+                <h1>
+                    Shyer AS
+                </h1>
+    
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa expedita quidem ut! Ut rem minima harum ducimus nostrum natus quas hic! Consequuntur voluptatibus temporibus perspiciatis labore ex corporis, placeat autem.
+                </p>
+            </div>
+        </section>
+
+    </div>
+</body>
+
+<script src="JavaScript/script.js"></script>
+<script src="JavaScript/navigation.js"></script>
+<script src="JavaScript/cursorTracker.js"></script>
+
+</html>
