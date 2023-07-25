@@ -1,0 +1,367 @@
+/*Hoved farger:
+Lysegrønn - #1fa78f
+Hvit - #ffffff
+Mørekegrønn - #005545
+
+Mørkeblå - #
+/IMG_2380.JPG
+*/
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+body{
+    margin: 0; /*Fjerner alle "marger" som dytter alt i en rettning på siden*/
+    padding: 0; /*Fjerner padding på hele nettsiden*/
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+
+    display: grid; /*Sette opp grids*/
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /*Sette opp kolonner i grids*/
+    grid-template-rows: 100vh auto auto; /*Sette opp rader i grids*/
+    grid-template-areas: /*Sette opp grids og hvor grid area skal være på nettsiden*/
+    "header header header header header header"
+    "main main main main main main"
+    "footer footer footer footer footer footer";
+
+    /*background-image: url(/Bilder/himmel.png);*/
+    background-image: url(/Bilder/Heaven2.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 0px;
+    background-position-x: center;
+    background-size: 110%;
+    overflow-x: hidden;
+
+}
+
+/*-----Header-----------------------------------------------------*/
+
+.header-nav{
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    height: 5rem;
+    text-transform: uppercase;
+    text-align: center;
+    z-index: 1;
+}
+
+.header-nav img{
+    position: absolute;
+    left: 2rem;
+    height: 4rem;
+    padding: 0.5rem;
+}
+
+.links{
+    margin-top: 2rem;
+}
+
+.links a{
+    transition: .3s; /*Setter tiden til 0.5 sekunder på a:hover*/
+    text-decoration-line: none; /*Setter en linje under teksten som en tekstdekorasjon*/
+    color:  #212226; /*Bestemmer fargen*/
+    padding: 20px; /*Lager mellomrom fra alle sider med 10px*/
+    font-size: 1em; /*Setter skrift størrelse*/
+}
+
+.links a:hover{
+    background-color: #f1f2e97a;
+}
+
+.dropdown{
+    display: none;
+    margin-top: 2rem;
+}
+
+.header{
+    grid-area: header; /*Tildeler et grid-area som sier plasseringen i grids*/
+    color: white;
+    text-align: center;
+}
+
+.arrow-container{
+    margin-right: 2.7rem;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.arrow {
+    border: solid  #F1F2E9;
+    border-width: 0 5px 5px 0;
+    padding: 20px;
+    top: 90vh;
+    position: absolute;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.arrow:hover{
+    border-color: black;
+}
+
+#down{
+    height: 0px;
+}
+
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title span{
+    text-transform: uppercase;
+    display: block;
+}
+
+.text1{
+    color: #F1F2E9;
+    font-size: 50px;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+    position: relative;
+    animation: text1 3s 1;
+}
+
+.text2{
+    text-transform: uppercase;
+    font-size: 30px;
+    color: black;
+    text-align: center;
+}
+
+.text3{
+    color: #F1F2E9;
+    font-size: 50px;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+    position: relative;
+    animation: text3 3s 1;
+}
+
+@keyframes text1{
+    0%{
+        color: black;
+        margin-bottom: -40px;
+    }
+    30%{
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+    }
+    85%{
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+    }
+}
+
+@keyframes text3{
+    0%{
+        color: black;
+    }
+    30%{
+        letter-spacing: 25px;
+    }
+    85%{
+        letter-spacing: 8px;
+    }
+}
+
+/*-----Main-----------------------------------------------------*/
+
+.main{
+    grid-area: main; /*Tildeler et grid-area som sier plasseringen i grids*/
+    background-color: #fff;
+}
+
+/*-------sections---------------------------*/
+
+.section{
+    display: flex;
+    column-gap: 4vw;
+    padding: 5rem;
+    border-top: solid black 1px;
+}
+
+iframe{
+    aspect-ratio: 16 / 6;
+    height: 40rem;
+}
+
+.pic img{
+    width: 40vw;
+    padding: 2.5vw;
+    border-left: solid black 1px;
+    border-right: solid black 1px;
+}
+
+.txt{
+    width: 45vw;
+}
+
+/*-------------------------------media scroller------------------------------------------*/
+.scroller{
+    padding-top: 5rem;
+    border-top: solid black 1px;
+}
+
+.media-scroller{
+    --spacer: 2rem;
+    display: grid;
+    gap: var(--spacer);
+    grid-auto-flow: column;
+    grid-auto-columns: 31%;
+
+    padding: 2rem;
+
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+}
+
+.media-element{
+    display: grid;
+    grid-template-rows: min-content;
+    gap: var(--spacer);
+    padding: var(--spacer);
+    background: black;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s;
+    color: white;
+}
+
+.media-element:hover{
+    background-color: white;
+    color: black;
+    border: solid black 1px;
+}
+
+.media-element > img{
+    inline-size: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+/*-----------------------------------------------------------*/
+
+.media-element-gallery{
+    display: grid;
+    grid-template-rows: min-content;
+    gap: var(--spacer);
+    background: black;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s;
+    color: white;
+}
+
+.media-element-gallery > img{
+    border: solid black 5px;
+    inline-size: 100%;
+    aspect-ratio: 20 / 15;
+    object-fit: cover;
+}
+
+.media-scroller-school{
+    --spacer: 2rem;
+    display: grid;
+    gap: var(--spacer);
+    grid-auto-flow: column;
+    grid-auto-columns: 51%;
+
+    padding: 2rem;
+
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+}
+
+/*-----------------------------------------------------------*/
+
+.snaps-inline{
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: 2rem;
+}
+
+.snaps-inline > * {
+    scroll-snap-align: start;
+}
+
+/*-------------------------------------Tekst-typer-----------------------------------------------------------------*/
+
+h1{
+    color: black; /*Bestemmer fargen*/
+    font-size: 3em; /*Setter skrift størrelse*/
+    padding-top: 10px; /*Flytte fra toppen med 10px*/
+    text-align: center; /*Flytte alt til senter*/
+    letter-spacing: 3px;
+}
+
+a{
+    color: black;
+}
+
+h2{
+    color: white; /*Bestemmer fargen*/
+    font-size: 3em; /*Setter skrift størrelse*/
+    padding-top: 10px; /*Flytte fra toppen med 10px*/
+    text-align: center; /*Flytte alt til senter*/
+    letter-spacing: 3px;
+}
+
+p{
+    color: black; /*Bestemmer fargen*/
+    font-size: 1.7em; /*Setter skrift størrelse*/
+    padding-top: 30px; /*Flytte fra toppen med 30px*/
+    padding-bottom: 39px; /*Flytte fra bunnen med 39px*/
+    line-height: 1.5em; /*Setter linjeavstand*/
+    text-align: center; /*Flytte alt til senter*/
+    letter-spacing: 5px;
+}
+
+.fagnavn, .sangnavn{
+    font-size: 30px;
+    text-align: center;
+}
+
+/*-------------------------------------------Footer---------------------------------------------*/
+
+.footer{
+    grid-area: footer;
+    text-align: center;
+    background-color: black;
+    color: #fff;
+    font-size: 1.5em;
+    padding: 4rem;
+}
+
+.footerlinks{
+    display: flex;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.footer .links a{
+    color: #fff;
+    border-radius: 90px;
+    padding: 2rem;
+    line-height: 6rem;
+}
+
+.footer .links a:hover{
+    color: black;
+    background-color: white;
+}
