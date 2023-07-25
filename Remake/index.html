@@ -40,23 +40,23 @@
                 </div>
                 <div class="header-nav_menu">
                     <a href="#site-location_about" class="nav-btn" id="aboutButton" style="animation: slideInFromLeft 0.7s ease-in;">About</a>
-                    <a href="social_media.html" class="nav-btn" id="someButton" style="animation: slideInFromLeft 0.8s ease-in;">Social Media</a>
-                    <a href="school_work.html" class="nav-btn" id="schoolWorkButton" style="animation: slideInFromLeft 0.9s ease-in;">School & Work</a>
+                    <a href="#site-location_some" class="nav-btn" id="someButton" style="animation: slideInFromLeft 0.8s ease-in;">Social Media</a>
+                    <a href="#site-location_workAndSchool" class="nav-btn" id="schoolWorkButton" style="animation: slideInFromLeft 0.9s ease-in;">School & Work</a>
                     <a href="#site-location_gallery" class="nav-btn" id="galleryButton" style="animation: slideInFromLeft 1s ease-in;">Gallery</a>
-                    <a href="contact.html" class="nav-btn" id="contactButton" style="animation: slideInFromLeft 1.1s ease-in;">Contact</a>
+                    <a href="#site-location_footer" class="nav-btn" id="contactButton" style="animation: slideInFromLeft 1.1s ease-in;">Contact</a>
                 </div>
                 <div class="header-nav_some">
                     <h3>
                         Follow me
                     </h3>
                     <div class="header-nav_some-icons">
-                        <a href="https://www.facebook.com/oliver.nilsson.7927" class="fa fa-facebook-square"></a>
-                        <a href="#" class="fa fa-twitter"></a>
-                        <a href="https://www.linkedin.com/in/oliver-nilsson-27b098246" class="fa fa-linkedin"></a>
-                        <a href="https://www.youtube.com/channel/UC7IEuD1CA4NhLldoMSftdBw" class="fa fa-youtube"></a>
-                        <a href="https://www.instagram.com/oliver.nilsson.04/" class="fa fa-instagram"></a>
-                        <a href="#" class="fa fa-pinterest"></a>
-                        <a href="#" class="fa fa-snapchat-ghost"></a>
+                        <a href="https://www.facebook.com/oliver.nilsson.7927" target=”_blank”  class="fa fa-facebook-square"></a>
+                        <a href="#" target=”_blank”  class="fa fa-twitter"></a>
+                        <a href="https://www.linkedin.com/in/oliver-nilsson-27b098246" target=”_blank”  class="fa fa-linkedin"></a>
+                        <a href="https://www.youtube.com/channel/UC7IEuD1CA4NhLldoMSftdBw" target=”_blank”  class="fa fa-youtube"></a>
+                        <a href="https://www.instagram.com/oliver.nilsson.04/" target=”_blank”  class="fa fa-instagram"></a>
+                        <a href="#" target=”_blank”  class="fa fa-pinterest"></a>
+                        <a href="https://t.snapchat.com/GSqEEvDJ" target=”_blank”  class="fa fa-snapchat-ghost"></a>
                     </div>
                 </div>
             </div>
@@ -82,10 +82,10 @@
             </div>
             <div class="sticky-nav_menu">
                 <a href="#site-location_about" class="nav-btn" id="aboutButton">About</a>
-                <a href="social_media.html" class="nav-btn" id="someButton">Social Media</a>
-                <a href="school_work.html" class="nav-btn" id="schoolWorkButton">School & Work</a>
+                <a href="#site-location_some" class="nav-btn" id="someButton">Social Media</a>
+                <a href="#site-location_workAndSchool" class="nav-btn" id="schoolWorkButton">School & Work</a>
                 <a href="#site-location_gallery" class="nav-btn" id="galleryButton">Gallery</a>
-                <a href="contact.html" class="nav-btn" id="contactButton">Contact</a>
+                <a href="#site-location_footer" class="nav-btn" id="contactButton">Contact</a>
             </div>
         </div>
 
@@ -94,25 +94,39 @@
                 <h1>About</h1>
                 <h2>I am titles</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas quaerat rerum provident obcaecati tenetur unde cupiditate at ducimus illum, modi ipsam vel nesciunt sequi perspiciatis illo expedita sed nisi adipisci!</p>
+                
                 <a class="nav-btn" id="openButton" onclick="openPopup()">Download CV</a>
-                <!-- The modal -->
-                <div id="myModal" class="modal">
-                    <div class="modal-content">
-                    <span class="close" onclick="closePopup()">&times;</span>
-                    <p>Sorry I dont have anything here yet... :/
-                        <br><br>Have a nice day tho! :P
-                    </p>
-                    </div>
-                </div>
 
             </div>
             <div class="about-img">
-                <img src="/Bilder/ForEvigt.jpg">
+                <img src="/Bilder/oliver_Black-White.jpg">
+            </div>
+        </section>
+
+        <section class="some-section" id="site-location_some">
+            <div class="some-content">
+                <h1>Social Media</h1>
+                <h2>I am titles</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas quaerat rerum provident obcaecati tenetur unde cupiditate at ducimus illum, modi ipsam vel nesciunt sequi perspiciatis illo expedita sed nisi adipisci!</p>
+            </div>
+            <div class="some-img">
+                <img src="/Bilder/snapcode.png">
+            </div>
+        </section>
+
+        <section class="workAndSchool-section" id="site-location_workAndSchool">
+            <div class="workAndSchool-content">
+                <h1>Work and School</h1>
+                <h2>I am titles</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas quaerat rerum provident obcaecati tenetur unde cupiditate at ducimus illum, modi ipsam vel nesciunt sequi perspiciatis illo expedita sed nisi adipisci!</p>
+            </div>
+            <div class="workAndSchool-img">
+                <img src="/Bilder/Shyer Logo SkyRain Sollid White 1024px.png">
             </div>
         </section>
 
         <section class="gallery-section" id="site-location_gallery">
-            <div class="main-wrapper gallery-wrapper">
+            <div class="gallery-wrapper">
             <h1 class="gallery-titles">Ludvig:</h1>
             <div class="splide">
                 <div class="splide__track">
@@ -141,6 +155,53 @@
             <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
             <script src="JavaScript/gallery.js"></script>
         </section>
+
+        <section class="footer-section" id="site-location_footer">
+            <div class="footer-content">
+                <div class="footer-content_logo">
+                    <a href="#site-location_top"><img src="/Bilder/LogoWhiteNoTXT.png"></a>
+                    <h3>Oliver Nilsson</h3>
+                </div>
+                <div class="footer-content_contact">
+                    <p>
+                        Phone: +47 974 88 836
+                        <br>Private Mail: olinil@outlook.com
+                        <br>Work Mail: oliver@shyer.no
+                        <br>Address: Øvre Lyngbø 38, Bergen 5164
+                    </p>
+                </div>
+                <div class="footer-content_links">
+                    <a href="#site-location_about" class="nav-btn" id="aboutButton">About</a>
+                    <a href="#site-location_some" class="nav-btn" id="someButton">Social Media</a>
+                    <a href="#site-location_workAndSchool" class="nav-btn" id="schoolWorkButton">School & Work</a>
+                    <a href="#site-location_gallery" class="nav-btn" id="galleryButton">Gallery</a>
+                    <a href="#site-location_footer" class="nav-btn" id="contactButton">Contact</a>
+                </div>
+                <div class="footer-content_credits">
+                    <p>
+                        &copy; 2023 olinil.com. all rights reserved.
+                    </p>
+
+                    <a class="nav-btn" id="openButton" onclick="openPopup()">Cookie Policy</a>
+
+                    <!-- The modal -->
+                    <div id="myModal" class="modal">
+                        <div class="modal-content">
+                        <span class="close" onclick="closePopup()">&times;</span>
+                        <h1>Cookie Policy</h1>
+                        <p>
+                            This is the cookie policy for olinil.com. We respect your privacy and want you to be able to get the best experiense from using our site.
+                        </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
         <!--<div class="nav-bar">
             <div class="nav-logo">
                 <img src="/Bilder/LogoWhiteNoTXT.png" alt="Logo">

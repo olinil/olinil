@@ -10,10 +10,6 @@ function animateText() {
   setTimeout(animateText, 1000); // Change the interval time (in milliseconds) to control the speed of animation
 }
 
-
-
-
-
 // Get the modal element
 const modal = document.getElementById("myModal");
 
@@ -26,9 +22,6 @@ function openPopup() {
 function closePopup() {
   modal.style.display = "none";
 }
-
-
-
 
 
 
