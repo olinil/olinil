@@ -18,6 +18,10 @@ body {
     overflow-x: hidden;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 /*CURSOR TRACKER
 .cursor-tracker {
     position: fixed;
@@ -432,9 +436,6 @@ a {
     background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(/Bilder/programering.png);
     background-size: cover;
     height: 100vh;
-}
-
-.workAndSchool-section {
     display: flex;
     padding: 10rem;
     justify-content: space-between;
@@ -463,6 +464,24 @@ a {
     font-size: 1rem;
 }
 
+.workAndSchool-content a {
+    margin-top: 2rem;
+    color: white;
+    background-color: red;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    border: 0;
+    width: 6rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.workAndSchool-content a:hover {
+    color: red;
+    background-color: white;
+    transition: 0.25s ease-in;
+}
+
 .workAndSchool-img {
     width: calc(100% / 2 * 1);
 }
@@ -470,6 +489,223 @@ a {
 .workAndSchool-img img {
     width: 70%;
     float: right;
+}
+
+/*SHOW MORE PAGE*/
+.workAndSchool_showMore-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(/Bilder/background_black_and_white_1.png);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.workAndSchool_showMore-section h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-left: 2rem;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px;
+    overflow-y: hidden;
+}
+
+.card {
+    flex: 1 0 auto;
+    border: 5px solid #101010;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    max-width: 25rem;
+}
+
+.card img {
+    height: 50%;
+    border-radius: 5px;
+    margin: 10px;
+    object-fit: contain;
+}
+
+.card-text {
+    color: black;
+    white-space: pre-wrap;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.card-text h2 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.card-text p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.currentWork-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url(/Bilder/Shyer\ bakgrunn\ til\ skjermer.png);
+    background-size: cover;
+    height: 100vh;
+}
+
+.currentWork-section {
+    display: flex;
+    padding: 10rem;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.currentWork-content {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / 2 * 1);
+}
+
+.currentWork-content h1 {
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.currentWork-content h2 {
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.currentWork-content p {
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.currentWork-content a {
+    margin-top: 2rem;
+    color: white;
+    background-color: red;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    border: 0;
+    width: 6rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.currentWork-content a:hover {
+    color: red;
+    background-color: white;
+    transition: 0.25s ease-in;
+}
+
+.currentWork-img {
+    width: calc(100% / 2 * 1);
+}
+
+.currentWork-img img {
+    width: 70%;
+    float: right;
+    filter: brightness(0.8);
+}
+
+.education-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url(/Bilder/bok.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.education-section {
+    display: flex;
+    padding: 10rem;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.education-content {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / 2 * 1);
+}
+
+.education-content h1 {
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.education-content h2 {
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.education-content p {
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.education-content a {
+    margin-top: 2rem;
+    color: white;
+    background-color: red;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    border: 0;
+    width: 6rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.education-content a:hover {
+    color: red;
+    background-color: white;
+    transition: 0.25s ease-in;
+}
+
+.education-img {
+    width: calc(100% / 2 * 1);
+}
+
+.education-img img {
+    width: 70%;
+    float: right;
+    box-shadow: 0 0 20px 20px #101010;
+}
+
+.timeline {
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 30px;
+}
+
+.timeline-content {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+}
+
+.timeline-date {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 /*WORK AND SCHOOL END*/
 
@@ -587,8 +823,9 @@ a {
 }
 
 .footer-content_links a:hover {
-    color: #101010;
     background-color: white;
+    color: red;
+    transition: color 0.25s ease-in;
 }
 
 .footer-content_credits {
@@ -612,6 +849,8 @@ a {
 .footer-content_credits a:hover {
     text-decoration: underline;
     cursor: pointer;
+    color: red;
+    transition: color 0.25s ease-in;
 }
 
 /* Style the modal */

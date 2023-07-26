@@ -41,4 +41,3 @@ function setVideoSpeed(speed) {
 
 // Example usage: Change speed to 1.5x
 setVideoSpeed(1.5);
-
