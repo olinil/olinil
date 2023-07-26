@@ -1,0 +1,6 @@
+RewriteEngine on
+RewriteCond %https://olinil.com/home /([^.]+)\.html [NC]
+RewriteRule ^ /%1 [NC,L,R]
+ 
+RewriteCond %https://olinil.com/index.html -f
+RewriteRule ^ %https://olinil.com/home.html [NC,L]
