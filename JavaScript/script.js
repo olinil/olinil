@@ -1,7 +1,7 @@
 const changingText = document.getElementById("changing-text");
 let currentTitleIndex = 0;
 
-const titles = ["Apprentice", "Developer", "Web designer", "Server manager", "Programmer", "Network engineer"];
+const titles = ["Trainee", "Developer", "Web designer", "Server manager", "Programmer", "Network engineer"];
 
 function animateText() {
   changingText.textContent = titles[currentTitleIndex];
