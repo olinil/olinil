@@ -929,6 +929,7 @@ nav {
             justify-content: center;
             align-items: center;
             color: white;
+            padding-bottom: 3rem;
         
             img {
                 height: 7rem;
@@ -949,7 +950,19 @@ nav {
         //8.2 footer-content_contact
         .footer-content_contact {
             text-align: center;
+            a {
+                color: white;
+                border: solid white 1px;
+                padding: 0.5rem 1.5rem;
+                font-weight: 300;
         
+                &:hover {
+                    background-color: white;
+                    color: $RedDarked;
+                    transition: color 0.25s ease-in;
+                }
+            }
+
             p {
                 padding: 2rem;
                 color: white;

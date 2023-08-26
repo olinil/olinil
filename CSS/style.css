@@ -780,6 +780,7 @@ nav {
   justify-content: center;
   align-items: center;
   color: white;
+  padding-bottom: 3rem;
 }
 .footer-section .footer-content .footer-content_logo img {
   height: 7rem;
@@ -795,6 +796,17 @@ nav {
 }
 .footer-section .footer-content .footer-content_contact {
   text-align: center;
+}
+.footer-section .footer-content .footer-content_contact a {
+  color: white;
+  border: solid white 1px;
+  padding: 0.5rem 1.5rem;
+  font-weight: 300;
+}
+.footer-section .footer-content .footer-content_contact a:hover {
+  background-color: white;
+  color: #c00424;
+  transition: color 0.25s ease-in;
 }
 .footer-section .footer-content .footer-content_contact p {
   padding: 2rem;

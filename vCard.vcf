@@ -1,0 +1,13 @@
+BEGIN:VCARD
+VERSION:4.0
+FN: Oliver Nilsson
+N:Nilsson;Oliver;
+TEL;TYPE=HOME,VOICE:+47 97488836
+EMAIL;CHARSET=UTF-8;type=HOME,INTERNET:olinil@outlook.com
+EMAIL;CHARSET=UTF-8;type=WORK,INTERNET:oliver@shyer.no
+ADR;CHARSET=UTF-8;TYPE=HOME:;;;Bergen;Vestland;;Norway
+BDAY:20041107
+PHOTO;MEDIATYPE=image/jpeg:https://olinil.com/Bilder/oliver_Black-White.jpg
+URL:https://olinil.com/
+SOURCE:https://olinil.com/vcard.vcf
+END:VCARD
