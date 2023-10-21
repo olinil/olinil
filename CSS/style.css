@@ -74,6 +74,7 @@ body .main-wrapper {
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
+  position: relative;
 }
 
 #preloader {
