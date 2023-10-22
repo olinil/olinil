@@ -3,7 +3,7 @@ name: Generate Image Gallery
 on:
   push:
     branches:
-      - main  # Modify this to match your branch name
+      - main/Bilder/PostPictures  # Modify this to match your branch name
 
 jobs:
   build:
