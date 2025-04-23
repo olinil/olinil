@@ -359,7 +359,7 @@ nav {
   color: #ffb832;
 }
 .header-section .header-welcome {
-  background: linear-gradient(rgba(0, 0, 0, 0.7) 40%, #cc6402), url(/Bilder/oliver.jpg) no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.3) 70%, #cc6402), url(/Bilder/oliver.jpg) no-repeat;
   background-position: center;
   background-size: cover;
   height: 100%;
@@ -669,8 +669,8 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(white, #ffb832);
   background-size: cover;
-  border-bottom: 5px solid black;
 }
 .gallery-section .gallery-wrapper {
   align-items: center;
@@ -911,7 +911,7 @@ nav {
 
 .footer-section {
   padding: 5rem 20rem 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/Bilder/background_black_and_white_3.png);
+  background: linear-gradient(#ffb832, #ffe8a5), url(/Bilder/background_black_and_white_3.png);
   background-size: cover;
   text-transform: uppercase;
 }
@@ -920,16 +920,18 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #101010;
+  background-color: #fffbec;
   padding: 5rem 5rem 0 5rem;
-  box-shadow: 0 20px 20px 20px #101010;
+  box-shadow: 0 20px 20px 0 #101010;
+  border-radius: 50px 50px 0 0;
+  border: solid 2px #f58300;
 }
 .footer-section .footer-content .footer-content_logo {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: black;
   padding-bottom: 3rem;
 }
 .footer-section .footer-content .footer-content_logo img {
@@ -940,7 +942,7 @@ nav {
   letter-spacing: 1rem;
 }
 .footer-section .footer-content .footer-content_logo h3:hover {
-  color: #ef233c;
+  color: black;
   cursor: pointer;
   transition: color 0.25s ease-in;
 }
@@ -949,23 +951,25 @@ nav {
 }
 .footer-section .footer-content .footer-content_contact a {
   color: white;
-  border: solid white 1px;
+  background-color: black;
+  border: solid black 1px;
   padding: 0.5rem 1.5rem;
   font-weight: 300;
+  border-radius: 90px;
 }
 .footer-section .footer-content .footer-content_contact a:hover {
   background-color: white;
-  color: #c00424;
+  color: black;
   transition: color 0.25s ease-in;
 }
 .footer-section .footer-content .footer-content_contact p {
   padding: 2rem;
-  color: white;
+  color: #a7a7a7;
   font-weight: 600;
   line-height: 2rem;
 }
 .footer-section .footer-content .footer-content_contact p p1 {
-  color: #c00424;
+  color: black;
 }
 .footer-section .footer-content .footer-content_links {
   display: flex;
@@ -976,14 +980,16 @@ nav {
 }
 .footer-section .footer-content .footer-content_links a {
   color: white;
-  border: solid white 1px;
+  background-color: black;
+  border-radius: 90px;
+  border: solid black 1px;
   padding: 0.5rem 1.5rem;
   margin: 0.5rem;
   font-weight: 300;
 }
 .footer-section .footer-content .footer-content_links a:hover {
   background-color: white;
-  color: #c00424;
+  color: black;
   transition: color 0.25s ease-in;
 }
 .footer-section .footer-content .footer-content_credits {
@@ -994,17 +1000,17 @@ nav {
   width: 100%;
 }
 .footer-section .footer-content .footer-content_credits p {
-  color: white;
+  color: black;
   font-weight: 200;
 }
 .footer-section .footer-content .footer-content_credits a {
-  color: white;
+  color: black;
   font-weight: 200;
 }
 .footer-section .footer-content .footer-content_credits a:hover {
   text-decoration: underline;
   cursor: pointer;
-  color: #c00424;
+  color: black;
   transition: color 0.25s ease-in;
 }
 .footer-section .footer-content .footer-content_credits .modal {
